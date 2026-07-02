@@ -1,0 +1,17 @@
+# secrets — never commit
+.kie-key
+.env
+.env.*
+!.env.example
+
+# runtime data (user accounts / orders)
+website/server/leones.db
+website/server/leones.db-shm
+website/server/leones.db-wal
+
+# build artifacts / deps
+node_modules/
+website/dist/
+
+# scratch
+*.tmp.mjs

@@ -1,0 +1,16 @@
+{
+  "wordmarkUrl": "https://tempfile.redpandaai.co/kieai/191534/leones/brand/wordmark.png",
+  "boopUrl": "https://tempfile.redpandaai.co/kieai/191534/leones/brand/boop-ref.png",
+  "lockup-dark": {
+    "taskId": "98485ae362edd942a31c7845515cfd13",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/98485ae362edd942a31c7845515cfd13_1782983759586.png"
+  },
+  "lockup-light": {
+    "taskId": "e207942646b229d5dd6d7a17aacabb6a",
+    "url": "https://tempfile.aiquickdraw.com/p/e207942646b229d5dd6d7a17aacabb6a_1_1782983887_4757.png"
+  },
+  "icon-boop": {
+    "taskId": "0e2b78fa1d8808df40863523452ffec0",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/0e2b78fa1d8808df40863523452ffec0_1782983941337.png"
+  }
+}

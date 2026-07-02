@@ -1,0 +1,101 @@
+{
+  "images:memes/boop-shocked": {
+    "taskId": "e75a0a5511941d70454c975aa3ac6a5b"
+  },
+  "videos:comedy/boop-rainy-day": {
+    "taskId": "d584e7dfe64ebecc25f27e2809b1895b",
+    "url": "https://tempfile.aiquickdraw.com/vw/d584e7dfe64ebecc25f27e2809b1895b.mp4"
+  },
+  "videos:comedy/cloudie-alarm": {
+    "taskId": "3e37fb8444e502b3c9db2548de108c04",
+    "url": "https://tempfile.aiquickdraw.com/v/3e37fb8444e502b3c9db2548de108c04_1782985673.mp4"
+  },
+  "videos:comedy/jelly-chef": {
+    "taskId": "e8840e41cc72e5ccf7b0b780cdd1eec3",
+    "url": "https://tempfile.aiquickdraw.com/v/e8840e41cc72e5ccf7b0b780cdd1eec3_1782985731.mp4"
+  },
+  "videos:comedy/trio-roadtrip": {
+    "taskId": "cde4946a5c84443a5dd5a0b8cfcb199b",
+    "url": "https://tempfile.aiquickdraw.com/v/cde4946a5c84443a5dd5a0b8cfcb199b_1782986178.mp4"
+  },
+  "videos:comedy/boop-mirror-scare": {
+    "taskId": "99e6a6c6307bc66e84c854eb31672588",
+    "url": "https://tempfile.aiquickdraw.com/v/99e6a6c6307bc66e84c854eb31672588_1782985705.mp4"
+  },
+  "videos:comedy/jelly-bubble": {
+    "taskId": "8f3eb5516f50c0f5114fc24c4c8cce6c",
+    "url": "https://tempfile.aiquickdraw.com/v/8f3eb5516f50c0f5114fc24c4c8cce6c_1782985861.mp4"
+  },
+  "videos:comedy/boop-snow-day": {
+    "taskId": "e5d7348676998c4d7f7c0dc56f954cc3",
+    "url": "https://tempfile.aiquickdraw.com/v/e5d7348676998c4d7f7c0dc56f954cc3_1782985842.mp4"
+  },
+  "videos:comedy/plush-photo": {
+    "taskId": "1023de364de261881a34d7197814f705",
+    "url": "https://tempfile.aiquickdraw.com/vw/1023de364de261881a34d7197814f705.mp4"
+  },
+  "videos:trend/pov-boop-morning": {
+    "taskId": "b72fb2d6c0afce07d7e7c08db220233c",
+    "url": "https://tempfile.aiquickdraw.com/vw/b72fb2d6c0afce07d7e7c08db220233c.mp4"
+  },
+  "videos:trend/day-of-jelly": {
+    "taskId": "2bf75cc9c0e41ed48854174a201fdaa9",
+    "url": "https://tempfile.aiquickdraw.com/v/2bf75cc9c0e41ed48854174a201fdaa9_1782986005.mp4"
+  },
+  "videos:trend/plushie-fashion-week": {
+    "taskId": "d7be1f11fc0e8b06bb8e6c0b90f9329a",
+    "url": "https://tempfile.aiquickdraw.com/vw/d7be1f11fc0e8b06bb8e6c0b90f9329a.mp4"
+  },
+  "videos:trend/boop-unbox-mystery": {
+    "taskId": "6292d72623fdc876352c151e0708edc1",
+    "url": "https://tempfile.aiquickdraw.com/v/6292d72623fdc876352c151e0708edc1_1782985943.mp4"
+  },
+  "videos:asmr/bubble-wrap": {
+    "taskId": "2b051e9f5a8be548bade46f0c066304e",
+    "url": "https://tempfile.aiquickdraw.com/vw/2b051e9f5a8be548bade46f0c066304e.mp4"
+  },
+  "videos:asmr/sand-slice": {
+    "taskId": "fde7f41717274ca43b4ab48f7baa1c20",
+    "url": "https://tempfile.aiquickdraw.com/vw/fde7f41717274ca43b4ab48f7baa1c20.mp4"
+  },
+  "videos:asmr/soap-peel": {
+    "taskId": "b7817584caad20d3ba77956229193f09",
+    "url": "https://tempfile.aiquickdraw.com/v/b7817584caad20d3ba77956229193f09_1782986332.mp4"
+  },
+  "videos:asmr/honey-dip": {
+    "taskId": "7546058d403b268724bc50d4386f3a93",
+    "url": "https://tempfile.aiquickdraw.com/vw/7546058d403b268724bc50d4386f3a93.mp4"
+  },
+  "videos:asmr/pastel-slime": {
+    "taskId": "0f4a97c1e96e4db96eaf701a16042d6b",
+    "url": "https://tempfile.aiquickdraw.com/v/0f4a97c1e96e4db96eaf701a16042d6b_1782985859.mp4"
+  },
+  "videos:asmr/gloss-open-close": {
+    "taskId": "34a422193e53cf9d9167db1ee40b2e2c",
+    "url": "https://tempfile.aiquickdraw.com/vw/34a422193e53cf9d9167db1ee40b2e2c.mp4"
+  },
+  "videos:games/spot-difference": {
+    "taskId": "44a8c674d0d3bffffd3fd395a9758ffb",
+    "url": "https://tempfile.aiquickdraw.com/v/44a8c674d0d3bffffd3fd395a9758ffb_1782986362.mp4"
+  },
+  "videos:games/boop-says": {
+    "taskId": "c25313c6a78a8df0e924a896ce3df330",
+    "url": "https://tempfile.aiquickdraw.com/vw/c25313c6a78a8df0e924a896ce3df330.mp4"
+  },
+  "videos:games/which-melts": {
+    "taskId": "bdbf88f11512c23cd0a1f2c217570e83",
+    "url": "https://tempfile.aiquickdraw.com/vw/bdbf88f11512c23cd0a1f2c217570e83.mp4"
+  },
+  "videos:games/memory-flip": {
+    "taskId": "00d7a843d9c588380e962e7d7882a8dd",
+    "url": "https://tempfile.aiquickdraw.com/v/00d7a843d9c588380e962e7d7882a8dd_1782986243.mp4"
+  },
+  "videos:stories/boop-meets-jelly": {
+    "taskId": "f166dc943e632bcafa71b639338d2272",
+    "url": "https://tempfile.aiquickdraw.com/vw/f166dc943e632bcafa71b639338d2272.mp4"
+  },
+  "videos:stories/cloudie-origin": {
+    "taskId": "a9eb273bb63a53bafd4ad3be253345d2",
+    "url": "https://tempfile.aiquickdraw.com/vw/a9eb273bb63a53bafd4ad3be253345d2.mp4"
+  }
+}

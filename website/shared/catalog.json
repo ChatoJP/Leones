@@ -1,0 +1,114 @@
+{
+  "currency": "EUR",
+  "shipping": {
+    "flat": 4.9,
+    "freeOver": 35
+  },
+  "products": [
+    {
+      "sku": "LN-LIP-001",
+      "slug": "ph-gloss-clear",
+      "name": "pH Gloss Clear",
+      "price": 14,
+      "stock": 250,
+      "active": true,
+      "image": "/products/LN-LIP-001.webp"
+    },
+    {
+      "sku": "LN-LIP-002",
+      "slug": "crystal-lip-oil",
+      "name": "Crystal Lip Oil",
+      "price": 16,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-002.webp"
+    },
+    {
+      "sku": "LN-LIP-003",
+      "slug": "glitter-gloss",
+      "name": "Glitter Gloss",
+      "price": 15,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-003.webp"
+    },
+    {
+      "sku": "LN-LIP-004",
+      "slug": "color-shift-gloss",
+      "name": "Color Shift Gloss",
+      "price": 16,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-004.webp"
+    },
+    {
+      "sku": "LN-LIP-005",
+      "slug": "lip-sleeping-mask",
+      "name": "Lip Sleeping Mask",
+      "price": 18,
+      "stock": 150,
+      "active": true,
+      "image": "/products/LN-LIP-005.webp"
+    },
+    {
+      "sku": "LN-LIP-006",
+      "slug": "lip-balm-spf",
+      "name": "Lip Balm SPF",
+      "price": 12,
+      "stock": 300,
+      "active": true,
+      "image": "/products/LN-LIP-006.webp"
+    },
+    {
+      "sku": "LN-LIP-007",
+      "slug": "lip-scrub",
+      "name": "Lip Scrub",
+      "price": 13,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-007.webp"
+    },
+    {
+      "sku": "LN-LIP-008",
+      "slug": "jelly-lip-mask",
+      "name": "Jelly Lip Mask",
+      "price": 15,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-008.webp"
+    },
+    {
+      "sku": "LN-LIP-009",
+      "slug": "duo-gloss",
+      "name": "Duo Gloss",
+      "price": 17,
+      "stock": 150,
+      "active": true,
+      "image": "/products/LN-LIP-009.webp"
+    },
+    {
+      "sku": "LN-LIP-010",
+      "slug": "roller-gloss",
+      "name": "Roller Gloss",
+      "price": 14,
+      "stock": 200,
+      "active": true,
+      "image": "/products/LN-LIP-010.webp"
+    }
+  ],
+  "bundles": [
+    {
+      "sku": "LN-SET-001",
+      "slug": "viral-trio",
+      "name": "The Viral Trio",
+      "price": 36,
+      "active": true,
+      "image": "/brand/unboxing.webp",
+      "items": [
+        "LN-LIP-001",
+        "LN-LIP-008",
+        "LN-LIP-003"
+      ]
+    }
+  ]
+}

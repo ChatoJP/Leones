@@ -1,0 +1,13 @@
+# Netlify deploy for the LeoNes website (static front-end).
+# NOTE: the Express API (website/server) does not run on Netlify static
+# hosting — auth/checkout/stock chips degrade gracefully in the front-end.
+[build]
+  base = "website"
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback for react-router routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
