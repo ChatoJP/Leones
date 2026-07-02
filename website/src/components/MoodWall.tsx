@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MotionBackground from "./MotionBackground";
 import { Link } from "react-router-dom";
 import Sticker from "./Sticker";
 import { useI18n } from "../lib/i18n";
@@ -48,7 +49,8 @@ export default function MoodWall() {
   const { lang } = useI18n();
   const c = COPY[lang];
   return (
-    <section id="moods" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="moods" className="relative isolate mx-auto max-w-6xl overflow-hidden rounded-[3rem] px-6 py-24">
+      <MotionBackground clip="bg-mood-wall" opacity={0.35} behind />
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

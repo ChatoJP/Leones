@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import MotionBackground from "./MotionBackground";
 import { useEffect, useState } from "react";
 import Sticker from "./Sticker";
 import { earnAchievement } from "../lib/achievements";
@@ -383,7 +384,8 @@ export default function LeonesTvChannel() {
   );
 
   return (
-    <section id="tv" className="overflow-hidden py-24">
+    <section id="tv" className="relative isolate overflow-hidden py-24">
+      <MotionBackground clip="bg-tv-glow" opacity={0.3} behind />
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

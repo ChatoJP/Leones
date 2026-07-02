@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MotionBackground from "./MotionBackground";
 import { motion } from "framer-motion";
 import { useCollection, readViewed } from "../lib/collection";
 import { useFavorites } from "../lib/favorites";
@@ -39,7 +40,8 @@ export default function ForYou() {
   if (scored.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-5xl px-6 pb-4 pt-16" aria-label="Picked for you">
+    <section className="relative isolate mx-auto max-w-5xl overflow-hidden rounded-[3rem] px-6 pb-4 pt-16" aria-label="Picked for you">
+      <MotionBackground clip="bg-hero-sparkle-v2" opacity={0.25} behind />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

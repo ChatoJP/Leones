@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MotionBackground from "./MotionBackground";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCollection } from "../lib/collection";
@@ -128,7 +129,8 @@ export default function CollectionAlbum({ compact = false }: { compact?: boolean
   };
 
   return (
-    <section className={compact ? "" : "mx-auto max-w-5xl px-6 py-20"}>
+    <section className={compact ? "" : "relative isolate mx-auto max-w-5xl overflow-hidden rounded-[3rem] px-6 py-20"}>
+      {!compact && <MotionBackground clip="bg-album-stickers" opacity={0.3} behind />}
       <div className="rounded-[2.5rem] bg-white/70 p-8 shadow-sm ring-1 ring-white/60 backdrop-blur sm:p-10">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>

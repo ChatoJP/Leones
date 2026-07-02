@@ -113,6 +113,15 @@
     { "id": "bg-lab-bubbles", "folder": "videos/ambient", "ratio": "16:9", "base": "ambient",
       "prompt": "Soft translucent pink and iridescent bubbles rising extremely slowly through a pale gradient like a gentle lava lamp, occasionally one bubble softly popping into a tiny sparkle, dreamy laboratory calm" },
 
+    { "id": "bg-quiz-magic", "folder": "videos/ambient", "ratio": "16:9", "base": "ambient",
+      "prompt": "Tiny glowing four-point sparkles slowly orbiting an invisible center like a magic constellation about to reveal an answer, soft pastel pink-blue gradient, one faint shimmer of a crystal-ball glow pulsing very slowly, mysterious but sweet" },
+    { "id": "bg-mood-wall", "folder": "videos/ambient", "ratio": "16:9", "base": "ambient",
+      "prompt": "Soft fields of pastel color very slowly blending into each other like watercolor moods — baby pink melting into sky blue into soft lilac into cream — dreamy slow color therapy, no shapes, just gorgeous slow gradients breathing" },
+    { "id": "bg-album-stickers", "folder": "videos/ambient", "ratio": "16:9", "base": "ambient",
+      "prompt": "Faint translucent outlines of cute sticker shapes — hearts, stars, tiny crowns and paw prints — drifting extremely slowly upward like watermarks on soft cream paper, delicate scrapbook dreaminess, extremely low contrast" },
+    { "id": "bg-tv-glow", "folder": "videos/ambient", "ratio": "16:9", "base": "ambient",
+      "prompt": "The soft ambient glow of a retro pastel pink television in a dim cozy room, gentle light flicker washing over plush toys silhouetted in the foreground watching the screen, warm nostalgic movie-night calm, extremely gentle motion" },
+
     { "id": "hook-stickers", "folder": "videos/hooks",
       "prompt": "A plain pink phone case gets bombed with cute stickers that fly in one by one and slap on — hearts, stars, a cloud, a lioness paw — building to a fully decorated masterpiece, a gloss tube rolls in and takes a proud spot beside it — then the stickers pop off one by one and it starts again, perfect loop" }
   ]

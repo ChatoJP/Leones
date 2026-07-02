@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MotionBackground from "./MotionBackground";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
@@ -98,7 +99,8 @@ export default function GlossQuiz() {
   };
 
   return (
-    <section id="quiz" className="relative overflow-hidden bg-gradient-to-b from-sky/25 via-cloud to-cloud py-24">
+    <section id="quiz" className="relative isolate overflow-hidden bg-gradient-to-b from-sky/25 via-cloud to-cloud py-24">
+      <MotionBackground clip="bg-quiz-magic" opacity={0.35} behind />
       <div className="mx-auto max-w-2xl px-6 text-center">
         <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-amber">{qc.eyebrow}</p>
         <h2 className="font-display mt-3 text-4xl font-semibold text-ink sm:text-5xl">

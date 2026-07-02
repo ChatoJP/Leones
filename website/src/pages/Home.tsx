@@ -608,8 +608,9 @@ function Bundle() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7 }}
-        className="relative mx-auto flex max-w-6xl flex-col items-center gap-10 overflow-hidden rounded-[3rem] bg-gradient-to-br from-sky via-cloud to-pink p-10 shadow-2xl sm:flex-row sm:p-16"
+        className="relative isolate mx-auto flex max-w-6xl flex-col items-center gap-10 overflow-hidden rounded-[3rem] bg-gradient-to-br from-sky via-cloud to-pink p-10 shadow-2xl sm:flex-row sm:p-16"
       >
+        <MotionBackground clip="bg-gift-glow" opacity={0.3} behind />
         <FloatingParticles count={8} />
         <div className="relative flex -space-x-10">
           {trio.map((p, i) => (
@@ -717,7 +718,8 @@ function Parents() {
   const hc = HOME_COPY[lang];
   const points = hc.parPoints;
   return (
-    <section id="parents" className="bg-white/70 py-24">
+    <section id="parents" className="relative isolate overflow-hidden bg-white/70 py-24">
+      <MotionBackground clip="bg-hero-clouds-v1" opacity={0.2} behind />
       <div className="mx-auto max-w-5xl px-6 text-center">
         <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-amber">{hc.parEyebrow}</p>
         <h2 className="font-display mt-3 text-4xl font-semibold text-ink sm:text-5xl">
@@ -866,7 +868,8 @@ function Reviews() {
   const { lang } = useI18n();
   const hc = HOME_COPY[lang];
   return (
-    <section className="py-24">
+    <section className="relative isolate overflow-hidden py-24">
+      <MotionBackground clip="bg-hero-silk" opacity={0.25} behind />
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="font-display text-4xl font-semibold text-ink sm:text-5xl">
           {hc.revTitle1} <em className="text-pink-deep">{hc.revTitle2}</em>

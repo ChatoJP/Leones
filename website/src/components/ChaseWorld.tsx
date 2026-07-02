@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MotionBackground from "./MotionBackground";
 import { Link } from "react-router-dom";
 import Sticker from "./Sticker";
 import { useChase } from "../lib/chase";
@@ -36,7 +37,8 @@ export default function ChaseWorld() {
   const cards = Math.min(10, [10, 25, 45, 70, 100, 140, 190, 250, 320, 400].filter((n) => n <= chase.totalSparkles).length);
 
   return (
-    <section id="chase-world" className="relative overflow-hidden bg-gradient-to-b from-cloud via-sky/20 to-cloud py-24">
+    <section id="chase-world" className="relative isolate overflow-hidden bg-gradient-to-b from-cloud via-sky/20 to-cloud py-24">
+      <MotionBackground clip="bg-hero-clouds-v2" opacity={0.3} behind />
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2">
         {/* trailer */}
         <motion.div

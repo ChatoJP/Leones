@@ -1184,6 +1184,26 @@
       "taskId": "bdd447042ed2566a761cdba0eb7bdd28",
       "url": "https://tempfile.aiquickdraw.com/v/bdd447042ed2566a761cdba0eb7bdd28_1783003368.mp4",
       "file": "assets/ecosystem/videos/ambient/bg-lab-bubbles.mp4"
+    },
+    "bg-quiz-magic": {
+      "taskId": "26faffdf809b5c59ff6cfce6427e31e6",
+      "url": "https://tempfile.aiquickdraw.com/v/26faffdf809b5c59ff6cfce6427e31e6_1783013686.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-quiz-magic.mp4"
+    },
+    "bg-mood-wall": {
+      "taskId": "ea5a9a33b8c225756d9c88f6ed944530",
+      "url": "https://tempfile.aiquickdraw.com/v/ea5a9a33b8c225756d9c88f6ed944530_1783013710.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-mood-wall.mp4"
+    },
+    "bg-album-stickers": {
+      "taskId": "0d0214feb75412fb37c57f46788fd7de",
+      "url": "https://tempfile.aiquickdraw.com/v/0d0214feb75412fb37c57f46788fd7de_1783013685.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-album-stickers.mp4"
+    },
+    "bg-tv-glow": {
+      "taskId": "939d696de5d54061eb339af25ddffd69",
+      "url": "https://tempfile.aiquickdraw.com/v/939d696de5d54061eb339af25ddffd69_1783013687.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-tv-glow.mp4"
     }
   }
 }

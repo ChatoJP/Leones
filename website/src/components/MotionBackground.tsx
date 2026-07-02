@@ -13,10 +13,13 @@ export default function MotionBackground({
   clip,
   opacity = 0.5,
   veil = true,
+  behind = false,
 }: {
   clip: string;
   opacity?: number;
   veil?: boolean;
+  /** paint under ALL section content (parent needs `relative isolate`) */
+  behind?: boolean;
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [reduced, setReduced] = useState(false);
@@ -48,7 +51,7 @@ export default function MotionBackground({
   const poster = `/posters/ambient/${clip}.jpg`;
 
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div className={`pointer-events-none absolute inset-0 overflow-hidden ${behind ? "-z-10" : ""}`} aria-hidden="true">
       {reduced ? (
         <img src={poster} alt="" className="h-full w-full object-cover" style={{ opacity }} onError={() => setBroken(true)} />
       ) : (
