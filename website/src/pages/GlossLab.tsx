@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 import FloatingParticles from "../components/FloatingParticles";
+import MotionBackground from "../components/MotionBackground";
 import { earnAchievement } from "../lib/achievements";
 import { awardRoars } from "../lib/roars";
 import { confettiFromEvent } from "../lib/confetti";
@@ -166,6 +167,7 @@ export default function GlossLab() {
 
   return (
     <section className="relative overflow-hidden py-20">
+      <MotionBackground clip="bg-lab-bubbles" opacity={0.4} />
       <FloatingParticles count={10} />
       <div className="relative mx-auto grid max-w-5xl items-center gap-12 px-6 sm:grid-cols-2">
         <div>

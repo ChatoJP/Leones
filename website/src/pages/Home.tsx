@@ -13,6 +13,7 @@ import HeartButton from "../components/HeartButton";
 import FloatingParticles from "../components/FloatingParticles";
 import GlossQuiz from "../components/GlossQuiz";
 import LeonesTvChannel from "../components/LeonesTvChannel";
+import MotionBackground from "../components/MotionBackground";
 import { useCart } from "../context/CartContext";
 import { confettiFromEvent } from "../lib/confetti";
 import { useI18n } from "../lib/i18n";
@@ -420,7 +421,8 @@ function TurnPink() {
 
   return (
     <section id="turnpink" className="relative overflow-hidden py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 sm:grid-cols-2">
+      <MotionBackground clip="bg-turnpink-swirl" opacity={0.3} />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 sm:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -561,6 +563,7 @@ function Drop() {
   return (
     <section id="drop" className="relative overflow-hidden py-24">
       <GradientBackdrop />
+      <MotionBackground clip="bg-drop-shelf" opacity={0.3} />
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -653,6 +656,7 @@ function Unboxing() {
   return (
     <section className="relative overflow-hidden py-24">
       <GradientBackdrop />
+      <MotionBackground clip="bg-gift-glow" opacity={0.35} />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 sm:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -750,6 +754,7 @@ function Challenge() {
   ];
   return (
     <section id="challenge" className="relative overflow-hidden bg-gradient-to-b from-pink/30 via-cloud to-sky/30 py-24">
+      <MotionBackground clip="bg-confetti-drift" opacity={0.4} />
       <FloatingParticles count={10} />
       <div className="relative mx-auto max-w-6xl px-6 text-center">
         <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-amber">{hc.chEyebrow}</p>
@@ -892,6 +897,7 @@ function FinalCta() {
         transition={{ duration: 0.7 }}
         className="relative mx-auto max-w-6xl overflow-hidden rounded-[3rem] bg-gradient-to-br from-sky via-cloud to-pink px-8 py-24 text-center shadow-2xl"
       >
+        <MotionBackground clip="bg-stars-night" opacity={0.35} veil={false} />
         <FloatingParticles count={10} />
         <h2 className="font-display relative text-6xl font-semibold text-ink sm:text-8xl">
           {hc.ctaTitle1} <em className="text-pink-deep">{hc.ctaTitle2}</em> {hc.ctaTitle3}

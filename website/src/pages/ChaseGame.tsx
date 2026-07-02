@@ -180,9 +180,15 @@ export default function ChaseGame() {
       <section className="relative overflow-hidden bg-gradient-to-b from-sky/30 via-cloud to-cloud py-14">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-amber">{c.eyebrow}</p>
-          <h1 translate="no" className="notranslate font-display mt-2 text-5xl font-semibold text-ink sm:text-6xl">
-            {c.title1} <em className="text-pink-deep">{c.title2}</em>
+          <h1 translate="no" className="notranslate sr-only">
+            {c.title1} {c.title2}
           </h1>
+          <img
+            src="/chase/game/title-art.webp"
+            alt=""
+            className="mx-auto mt-3 w-72 max-w-full drop-shadow-xl sm:w-96"
+            aria-hidden="true"
+          />
           <p className="mx-auto mt-3 max-w-xl font-semibold text-ink/60">{c.sub}</p>
         </div>
       </section>
@@ -223,11 +229,11 @@ export default function ChaseGame() {
           {/* the fleeing gloss (decorative, always ahead) */}
           {phase === "playing" && (
             <motion.img
-              src="/products/LN-LIP-001.webp"
+              src="/chase/game/sprite-gloss-run.webp"
               alt=""
-              animate={{ y: [0, -10, 0], rotate: [10, 14, 10] }}
-              transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute right-6 bottom-8 h-16 w-auto"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 0.45, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute right-6 bottom-6 h-20 w-auto"
               aria-hidden="true"
             />
           )}
@@ -235,20 +241,26 @@ export default function ChaseGame() {
           {/* items */}
           {phase === "playing" &&
             items.map((it) => (
-              <span
+              <img
                 key={it.id}
-                className="absolute text-3xl"
+                src={
+                  it.kind === "sparkle"
+                    ? "/chase/game/sprite-sparkle.webp"
+                    : it.kind === "heart"
+                      ? "/chase/game/sprite-heart.webp"
+                      : "/chase/game/sprite-raincloud.webp"
+                }
+                alt=""
+                className="absolute h-12 w-12 object-contain drop-shadow"
                 style={{ left: it.x, bottom: it.y + 8 }}
                 aria-hidden="true"
-              >
-                {it.kind === "sparkle" ? "✦" : it.kind === "heart" ? "💗" : "🌧️"}
-              </span>
+              />
             ))}
 
           {/* Bloop */}
           {phase !== "idle" && (
             <motion.img
-              src="/mascots/boop.webp"
+              src={bloopY > 4 ? "/chase/game/sprite-bloop-jump.webp" : "/chase/game/sprite-bloop-run.webp"}
               alt="Bloop"
               animate={stumble ? { rotate: [0, -18, 0] } : { rotate: 0 }}
               className="absolute left-16 h-24 w-auto drop-shadow-lg"
@@ -259,7 +271,7 @@ export default function ChaseGame() {
           {/* idle overlay */}
           {phase === "idle" && (
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white/30 backdrop-blur-[2px]">
-              <img src="/mascots/boop.webp" alt="" className="h-28 w-auto drop-shadow-xl" />
+              <img src="/chase/game/sprite-bloop-run.webp" alt="" className="h-28 w-auto drop-shadow-xl" />
               <button
                 onClick={start}
                 className="rounded-full bg-ink px-9 py-4 text-lg font-extrabold text-cloud shadow-xl transition hover:scale-105"

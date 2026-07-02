@@ -50,6 +50,12 @@ const REACT_WRONG = ["/mascots/expressions/boop-think.webp", "/mascots/expressio
 type Tab = "funny" | "asmr" | "games" | "drops";
 
 const FUNNY = [
+  { src: "/videos/chase/chase-fails.mp4", en: "Chase fails compilation", pt: "Compilação de falhanços da perseguição" },
+  { src: "/videos/chase/gloss-pov.mp4", en: "POV: you are the gloss", pt: "POV: tu és o gloss" },
+  { src: "/videos/chase/bloop-vs-vacuum.mp4", en: "Bloop vs. the vacuum", pt: "Bloop vs. o aspirador" },
+  { src: "/videos/chase/cloudie-drives.mp4", en: "Cloudie drives (asleep)", pt: "A Cloudie a conduzir (a dormir)" },
+  { src: "/videos/chase/card-pack-asmr.mp4", en: "Card pack ASMR — golden pull!", pt: "ASMR de pacote de cartas — dourada!" },
+  { src: "/videos/chase/sticker-magic.mp4", en: "The magic sticker book", pt: "O caderno de stickers mágico" },
   { src: "/videos/tv/comedy-boop-cooking.mp4", en: "Bloop bakes a cake", pt: "O Bloop faz um bolo" },
   { src: "/videos/tv/comedy-hide-and-seek.mp4", en: "Hide & seek (Cloudie tried)", pt: "Escondidas (a Cloudie tentou)" },
   { src: "/videos/tv/comedy-boop-vs-bee.mp4", en: "Bloop vs. the bee", pt: "Bloop vs. a abelha" },

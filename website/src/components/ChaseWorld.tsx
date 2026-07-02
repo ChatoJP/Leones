@@ -109,6 +109,27 @@ export default function ChaseWorld() {
           </div>
         </motion.div>
       </div>
+
+      {/* pose parade — the cast tumbles across the section */}
+      <div className="mt-16 overflow-hidden" aria-hidden="true">
+        <motion.div
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+          className="flex w-max items-end gap-10 px-6"
+        >
+          {[...Array(2)].flatMap((_, half) =>
+            [3, 7, 11, 15, 19, 22, 26, 30, 5, 13, 24, 28].map((n, i) => (
+              <img
+                key={`${half}-${n}`}
+                src={`/chase/poses/pose-${String(n).padStart(2, "0")}.webp`}
+                alt=""
+                loading="lazy"
+                className={`h-20 w-auto drop-shadow-md sm:h-24 ${i % 2 ? "-rotate-3" : "rotate-3"}`}
+              />
+            )),
+          )}
+        </motion.div>
+      </div>
     </section>
   );
 }

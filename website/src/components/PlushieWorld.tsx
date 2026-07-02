@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, type FormEvent } from "react";
 import FloatingParticles from "./FloatingParticles";
+import MotionBackground from "./MotionBackground";
 import Sticker from "./Sticker";
 import { useI18n } from "../lib/i18n";
 
@@ -92,6 +93,7 @@ export default function PlushieWorld() {
   const c = COPY[lang];
   return (
     <section id="plushies" className="relative overflow-hidden bg-gradient-to-b from-pink/25 via-cloud to-cloud py-24">
+      <MotionBackground clip="bg-pajama-party" opacity={0.45} />
       <FloatingParticles count={10} />
       <div className="relative mx-auto max-w-6xl px-6">
         <motion.div

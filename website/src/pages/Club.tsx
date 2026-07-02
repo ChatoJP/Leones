@@ -4,6 +4,7 @@ import ActivityStickers from "../components/ActivityStickers";
 import AvatarPicker from "../components/AvatarPicker";
 import CollectionAlbum from "../components/CollectionAlbum";
 import FloatingParticles from "../components/FloatingParticles";
+import MotionBackground from "../components/MotionBackground";
 import { readBirthdayMonth, setBirthdayMonth } from "../components/PartyMode";
 import { useAuth } from "../context/AuthContext";
 import { useI18n } from "../lib/i18n";
@@ -91,6 +92,7 @@ export default function Club() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-pink/30 via-cloud to-cloud py-24">
+        <MotionBackground clip="bg-pajama-party" opacity={0.45} />
         <FloatingParticles count={12} />
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <motion.img

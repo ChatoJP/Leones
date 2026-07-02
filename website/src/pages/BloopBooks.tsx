@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Bloop from "../components/Bloop";
 import FloatingParticles from "../components/FloatingParticles";
+import MotionBackground from "../components/MotionBackground";
 import Sticker from "../components/Sticker";
 import { useI18n } from "../lib/i18n";
 import { useAllProgress } from "../lib/bookclub";
@@ -40,6 +41,7 @@ export default function BloopBooks() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-sky/30 via-cloud to-cloud py-20">
+        <MotionBackground clip="bg-stars-night" opacity={0.35} />
         <FloatingParticles count={10} />
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <div className="inline-block">

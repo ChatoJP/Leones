@@ -9,7 +9,8 @@
     "cloudie": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/cloudie.png",
     "jelly": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/jelly.png",
     "boop": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/boop.png",
-    "package": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/package.png"
+    "package": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/package.png",
+    "plush-group": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/plush-group.png"
   },
   "units": {
     "logo-glow-v1": {
@@ -1143,6 +1144,46 @@
       "taskId": "cfe7bd7dc9734a9c8e024bc64b8da316",
       "url": "https://tempfile.aiquickdraw.com/aistudio/cfe7bd7dc9734a9c8e024bc64b8da316_1783001188982.png",
       "file": "assets/ecosystem/stickers/sticker-star.png"
+    },
+    "bg-pajama-party": {
+      "taskId": "75ce5d16e9648f5f38c7e775e774f30f",
+      "url": "https://tempfile.aiquickdraw.com/v/75ce5d16e9648f5f38c7e775e774f30f_1783003316.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-pajama-party.mp4"
+    },
+    "bg-pajama-party-mobile": {
+      "taskId": "744916065b799474deba7be28817fb56",
+      "url": "https://tempfile.aiquickdraw.com/v/744916065b799474deba7be28817fb56_1783003303.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-pajama-party-mobile.mp4"
+    },
+    "bg-drop-shelf": {
+      "taskId": "ab3b207c116443247d1f2b8b309bfd6d",
+      "url": "https://tempfile.aiquickdraw.com/v/ab3b207c116443247d1f2b8b309bfd6d_1783003294.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-drop-shelf.mp4"
+    },
+    "bg-turnpink-swirl": {
+      "taskId": "5068cc4eb1c03d47aabca848b6838d21",
+      "url": "https://tempfile.aiquickdraw.com/v/5068cc4eb1c03d47aabca848b6838d21_1783003428.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-turnpink-swirl.mp4"
+    },
+    "bg-gift-glow": {
+      "taskId": "4ea845b3b416f4ff2bf3769a12470416",
+      "url": "https://tempfile.aiquickdraw.com/v/4ea845b3b416f4ff2bf3769a12470416_1783003326.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-gift-glow.mp4"
+    },
+    "bg-stars-night": {
+      "taskId": "dc4e385ce723fc01e83678fa6cc6bb63",
+      "url": "https://tempfile.aiquickdraw.com/v/dc4e385ce723fc01e83678fa6cc6bb63_1783003299.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-stars-night.mp4"
+    },
+    "bg-confetti-drift": {
+      "taskId": "ffb9fcff7d3e0f1131c9fe1483559b97",
+      "url": "https://tempfile.aiquickdraw.com/v/ffb9fcff7d3e0f1131c9fe1483559b97_1783003486.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-confetti-drift.mp4"
+    },
+    "bg-lab-bubbles": {
+      "taskId": "bdd447042ed2566a761cdba0eb7bdd28",
+      "url": "https://tempfile.aiquickdraw.com/v/bdd447042ed2566a761cdba0eb7bdd28_1783003368.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-lab-bubbles.mp4"
     }
   }
 }
