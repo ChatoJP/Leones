@@ -1,7 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import db from "./db.mjs";
@@ -627,5 +627,19 @@ app.get("/api/admin/content", requireAdmin, async (req, res) => {
     res.status(500).json({ error: `content-library unavailable: ${err.message}` });
   }
 });
+
+/* ---------------- production: serve the built site (single-process deploy) ---------------- */
+
+const DIST = join(ROOT, "..", "dist");
+if (existsSync(join(DIST, "index.html"))) {
+  app.use(express.static(DIST, { redirect: false }));
+  app.use((req, res, next) => {
+    if (req.method === "GET" && !req.path.startsWith("/api") && !req.path.startsWith("/content-library")) {
+      return res.sendFile(join(DIST, "index.html"));
+    }
+    next();
+  });
+  console.log("[static] serving website/dist (SPA fallback active)");
+}
 
 app.listen(PORT, () => console.log(`[leones-api] listening on http://localhost:${PORT}`));
