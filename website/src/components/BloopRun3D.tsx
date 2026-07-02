@@ -175,13 +175,13 @@ function Entities({ run }: { run: React.MutableRefObject<RunState> }) {
   return (
     <>
       {run.current.entities.map((e) => (
-        <EntityMesh key={e.id} entity={e} run={run} />
+        <EntityMesh key={e.id} entity={e} />
       ))}
     </>
   );
 }
 
-function EntityMesh({ entity, run }: { entity: Entity; run: React.MutableRefObject<RunState> }) {
+function EntityMesh({ entity }: { entity: Entity }) {
   const ref = useRef<THREE.Group>(null);
   useFrame((state) => {
     const g = ref.current;
