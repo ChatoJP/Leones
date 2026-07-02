@@ -1,0 +1,23 @@
+{
+  "leones-theme": {
+    "taskId": "cf6985cb9817729baa5357c0e8256a4c",
+    "files": [
+      "leones-theme-v1.mp3",
+      "leones-theme-v2.mp3"
+    ]
+  },
+  "pajama-party": {
+    "taskId": "566206ddeb8c4979a2a712159eb6c474",
+    "files": [
+      "pajama-party-v1.mp3",
+      "pajama-party-v2.mp3"
+    ]
+  },
+  "bloop-run": {
+    "taskId": "2f1115b8ee0ab20a117172cefc76f9c0",
+    "files": [
+      "bloop-run-v1.mp3",
+      "bloop-run-v2.mp3"
+    ]
+  }
+}

@@ -12,13 +12,17 @@
     "dev:all": "node server/index.mjs & vite"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@types/three": "^0.185.0",
     "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
     "framer-motion": "^12.42.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1",
-    "stripe": "^22.3.0"
+    "stripe": "^22.3.0",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",

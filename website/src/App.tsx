@@ -4,6 +4,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { I18nProvider } from "./lib/i18n";
 import { CartProvider } from "./context/CartContext";
 import AnnouncementBar from "./components/AnnouncementBar";
+import AdminArea from "./components/AdminArea";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
@@ -106,7 +107,7 @@ export default function App() {
                   <Route path="/forgot-password" element={<ForgotPassword />} />
                   <Route path="/account" element={<Account />} />
                   <Route path="/account/orders" element={<AccountOrders />} />
-                  <Route path="/admin/orders" element={<AdminOrders />} />
+                  <Route path="/admin/orders" element={<AdminArea><AdminOrders /></AdminArea>} />
                   <Route path="/club" element={<Club />} />
                   <Route path="/privacy" element={<Privacy />} />
                   <Route path="/terms" element={<Terms />} />
@@ -114,12 +115,12 @@ export default function App() {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/world" element={<World />} />
                   <Route path="/track" element={<Track />} />
-                  <Route path="/admin/stats" element={<AdminStats />} />
-                  <Route path="/admin/rewards" element={<AdminRewards />} />
-                  <Route path="/admin/expeditions" element={<AdminExpeditions />} />
-                  <Route path="/admin/costs" element={<AdminCosts />} />
-                  <Route path="/admin/suppliers" element={<AdminSuppliers />} />
-                  <Route path="/admin/content" element={<AdminContent />} />
+                  <Route path="/admin/stats" element={<AdminArea><AdminStats /></AdminArea>} />
+                  <Route path="/admin/rewards" element={<AdminArea><AdminRewards /></AdminArea>} />
+                  <Route path="/admin/expeditions" element={<AdminArea><AdminExpeditions /></AdminArea>} />
+                  <Route path="/admin/costs" element={<AdminArea><AdminCosts /></AdminArea>} />
+                  <Route path="/admin/suppliers" element={<AdminArea><AdminSuppliers /></AdminArea>} />
+                  <Route path="/admin/content" element={<AdminArea><AdminContent /></AdminArea>} />
                   <Route path="/bloop-books" element={<BloopBooks />} />
                   <Route path="/bloop-books/:slug" element={<BloopBookReader />} />
                   <Route path="/lab" element={<GlossLab />} />
