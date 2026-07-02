@@ -1,41 +1,475 @@
 {
   "images:poses/pose-01": {
-    "taskId": "7a6ebcedbed65d0c4adf3901770d574e"
+    "taskId": "7a6ebcedbed65d0c4adf3901770d574e",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/7a6ebcedbed65d0c4adf3901770d574e_1783002180018.png"
   },
-  "videos:trailer/act1": {
-    "taskId": "56eb5d706f320b47d772ac4e6c124785",
-    "url": "https://tempfile.aiquickdraw.com/v/56eb5d706f320b47d772ac4e6c124785_1783002214.mp4"
+  "images:poses/pose-02": {
+    "taskId": "9cd6a129a2f8bef82697d0b49b1904e5",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/9cd6a129a2f8bef82697d0b49b1904e5_1783002159791.png"
   },
-  "videos:trailer/act2": {
-    "taskId": "d63bf2ecfb2f4d39576dfe73bfe19eb7",
-    "url": "https://tempfile.aiquickdraw.com/v/d63bf2ecfb2f4d39576dfe73bfe19eb7_1783002225.mp4"
+  "images:poses/pose-03": {
+    "taskId": "34e12375e1babed9291c5919bb75a843",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/34e12375e1babed9291c5919bb75a843_1783002159984.png"
   },
-  "videos:loops/run-cycle": {
-    "taskId": "4500df7fcf62fb6b57ba3c8900aa7ae1",
-    "url": "https://tempfile.aiquickdraw.com/v/4500df7fcf62fb6b57ba3c8900aa7ae1_1783002266.mp4"
+  "images:poses/pose-04": {
+    "taskId": "81172bc21eb612c333492efd45b50470",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/81172bc21eb612c333492efd45b50470_1783002160314.png"
   },
-  "videos:loops/chase-cycle": {
-    "taskId": "f1aeeffed49c22186476fe6a94932974",
-    "url": "https://tempfile.aiquickdraw.com/v/f1aeeffed49c22186476fe6a94932974_1783002250.mp4"
+  "images:poses/pose-05": {
+    "taskId": "972300d4ee102c48b182f37d41e10f0d",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/972300d4ee102c48b182f37d41e10f0d_1783002180804.png"
   },
-  "videos:tiktok/chase-fails": {
-    "taskId": "0358f08935994b9ee84a204e5acf7d75",
-    "url": "https://tempfile.aiquickdraw.com/v/0358f08935994b9ee84a204e5acf7d75_1783002224.mp4"
+  "images:poses/pose-06": {
+    "taskId": "44d256bfa9110e37d2971feb8f130367",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/44d256bfa9110e37d2971feb8f130367_1783002160833.png"
   },
-  "videos:tiktok/gloss-pov": {
-    "taskId": "b12ed702426d2a924fe09e9d6d938352",
-    "url": "https://tempfile.aiquickdraw.com/v/b12ed702426d2a924fe09e9d6d938352_1783002239.mp4"
+  "images:poses/pose-07": {
+    "taskId": "8c0713aa4b90a0fda242d68f0a9b1ea7",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/8c0713aa4b90a0fda242d68f0a9b1ea7_1783002160622.png"
   },
-  "videos:tiktok/card-pack-asmr": {
-    "taskId": "7d97297edb346563c7fb125f49171a67"
+  "images:poses/pose-08": {
+    "taskId": "15eb0748a0105d712446525eec095b06",
+    "url": "https://tempfile.aiquickdraw.com/p/15eb0748a0105d712446525eec095b06_1_1783002158_9696.png"
   },
-  "videos:tiktok/sticker-magic": {
-    "taskId": "14e42a7a01ffc150fc4bf37190c91cb6"
+  "images:poses/pose-09": {
+    "taskId": "08890b6197e5187cb84a9f4fc29f2b04",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/08890b6197e5187cb84a9f4fc29f2b04_1783002188193.png"
   },
-  "videos:tiktok/bloop-vs-vacuum": {
-    "taskId": "db30100e3a55e32fec19f7f96a62d03d"
+  "images:poses/pose-10": {
+    "taskId": "4071a3ac56d39c67d3c4d2a6043d945d",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/4071a3ac56d39c67d3c4d2a6043d945d_1783002167083.png"
   },
-  "videos:tiktok/cloudie-drives": {
-    "taskId": "2bc8b480a37dd7fcde1e6bb5ef8b6b82"
+  "images:poses/pose-11": {
+    "taskId": "95bca850c1d20fa6977fca277713ada8",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/95bca850c1d20fa6977fca277713ada8_1783002187951.png"
+  },
+  "images:poses/pose-12": {
+    "taskId": "84da8a29e9d6de3a341dd7e202e535c6",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/84da8a29e9d6de3a341dd7e202e535c6_1783002167195.png"
+  },
+  "images:poses/pose-13": {
+    "taskId": "7547965dc8095c28bddb284e2b8b34cf",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/7547965dc8095c28bddb284e2b8b34cf_1783002190273.png"
+  },
+  "images:poses/pose-14": {
+    "taskId": "a0abc4e2ba1cf85f93b93afeee702d7d",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/a0abc4e2ba1cf85f93b93afeee702d7d_1783002168752.png"
+  },
+  "images:poses/pose-15": {
+    "taskId": "5a021f8b58476ebb377fd5332a615ac7",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/5a021f8b58476ebb377fd5332a615ac7_1783002190026.png"
+  },
+  "images:poses/pose-16": {
+    "taskId": "78c781ec666c85a3dc9d45ae306bdb79",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/78c781ec666c85a3dc9d45ae306bdb79_1783002191575.png"
+  },
+  "images:poses/pose-17": {
+    "taskId": "da4de1d0485bd310554770e39fd0deeb",
+    "url": "https://tempfile.aiquickdraw.com/p/da4de1d0485bd310554770e39fd0deeb_1_1783002432_1652.png"
+  },
+  "images:poses/pose-18": {
+    "taskId": "3466356ecc71f43619b557b838029a32",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/3466356ecc71f43619b557b838029a32_1783002174114.png"
+  },
+  "images:poses/pose-19": {
+    "taskId": "149e8e35667866c4d89dd4f3da7a8f97",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/149e8e35667866c4d89dd4f3da7a8f97_1783002294791.png"
+  },
+  "images:poses/pose-20": {
+    "taskId": "439ed48e960d09982f818dbc1c666f53",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/439ed48e960d09982f818dbc1c666f53_1783002195478.png"
+  },
+  "images:poses/pose-21": {
+    "taskId": "0747405a0efe66398f4be1d8c2dcc470",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/0747405a0efe66398f4be1d8c2dcc470_1783002185856.png"
+  },
+  "images:poses/pose-22": {
+    "taskId": "a3ef7b412b94a3225358b7c8f353b0e0",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/a3ef7b412b94a3225358b7c8f353b0e0_1783002174815.png"
+  },
+  "images:poses/pose-23": {
+    "taskId": "3424a2cfd24ab6578d5d415d49e85beb",
+    "url": "https://tempfile.aiquickdraw.com/p/3424a2cfd24ab6578d5d415d49e85beb_1_1783002194_7521.png"
+  },
+  "images:poses/pose-24": {
+    "taskId": "e1a54204c7fc65885c23cbebc16fc6c6",
+    "url": "https://tempfile.aiquickdraw.com/p/e1a54204c7fc65885c23cbebc16fc6c6_1_1783002206_5909.png"
+  },
+  "images:poses/pose-25": {
+    "taskId": "f37462435b539ff85bb4879b9342c0bb",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/f37462435b539ff85bb4879b9342c0bb_1783002202389.png"
+  },
+  "images:poses/pose-26": {
+    "taskId": "018c661a68680038e6072cd6e7a19199",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/018c661a68680038e6072cd6e7a19199_1783002321656.png"
+  },
+  "images:poses/pose-27": {
+    "taskId": "f24616920bc7a7354279e5c0b6d7e3b1",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/f24616920bc7a7354279e5c0b6d7e3b1_1783002322519.png"
+  },
+  "images:poses/pose-28": {
+    "taskId": "e2bfdcf6305cf76eb479d284ea634332",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/e2bfdcf6305cf76eb479d284ea634332_1783002197491.png"
+  },
+  "images:poses/pose-29": {
+    "taskId": "1fef1e97154f983b87fd5d91af800524",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/1fef1e97154f983b87fd5d91af800524_1783002203347.png"
+  },
+  "images:poses/pose-30": {
+    "taskId": "e7f00c5b86152c04e2f940ea597a69c2",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/e7f00c5b86152c04e2f940ea597a69c2_1783002303619.png"
+  },
+  "images:stickers/sticker-01": {
+    "taskId": "38432a1bcbe2b770c3c257aa04ee5407",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/38432a1bcbe2b770c3c257aa04ee5407_1783002304168.png"
+  },
+  "images:stickers/sticker-02": {
+    "taskId": "f78137e8d56e5c3ed5e6188172347242",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/f78137e8d56e5c3ed5e6188172347242_1783002203214.png"
+  },
+  "images:stickers/sticker-03": {
+    "taskId": "61352698091883adac95031e977dc44b",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/61352698091883adac95031e977dc44b_1783002189829.png"
+  },
+  "images:stickers/sticker-04": {
+    "taskId": "108064426595b55d7781269de99e1626",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/108064426595b55d7781269de99e1626_1783002189290.png"
+  },
+  "images:stickers/sticker-05": {
+    "taskId": "1aed237c9cfd035710cc337be888f7a8",
+    "url": "https://tempfile.aiquickdraw.com/p/1aed237c9cfd035710cc337be888f7a8_1_1783002217_7481.png"
+  },
+  "images:stickers/sticker-06": {
+    "taskId": "4ef45cf90ab9a1d924dbd19841adc2c7",
+    "url": "https://tempfile.aiquickdraw.com/p/4ef45cf90ab9a1d924dbd19841adc2c7_1_1783002219_9705.png"
+  },
+  "images:stickers/sticker-07": {
+    "taskId": "bcf35038a45e45d29a3c49963a8b8963",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/bcf35038a45e45d29a3c49963a8b8963_1783002192620.png"
+  },
+  "images:stickers/sticker-08": {
+    "taskId": "a4607a153e4566423ddc0a6992b1f9d2",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/a4607a153e4566423ddc0a6992b1f9d2_1783002209914.png"
+  },
+  "images:stickers/sticker-09": {
+    "taskId": "af1d98ae13e528b7106c137ba79858b9",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/af1d98ae13e528b7106c137ba79858b9_1783002310793.png"
+  },
+  "images:stickers/sticker-10": {
+    "taskId": "7362480f58442e2847b5512168ce32a7",
+    "url": "https://tempfile.aiquickdraw.com/p/7362480f58442e2847b5512168ce32a7_1_1783002220_7488.png"
+  },
+  "images:stickers/sticker-11": {
+    "taskId": "e52a94317b387738068f947b64e2f99c",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/e52a94317b387738068f947b64e2f99c_1783002217902.png"
+  },
+  "images:stickers/sticker-12": {
+    "taskId": "48b771c7a615465a09fcd20fe5d706f9",
+    "url": "https://tempfile.aiquickdraw.com/p/48b771c7a615465a09fcd20fe5d706f9_1_1783002449_7116.png"
+  },
+  "images:stickers/sticker-13": {
+    "taskId": "5d9e2a30ec37fb5148ad7dc360d0ff81",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/5d9e2a30ec37fb5148ad7dc360d0ff81_1783002216053.png"
+  },
+  "images:stickers/sticker-14": {
+    "taskId": "b61d47e1ab6424158e57002b55f8d582",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/b61d47e1ab6424158e57002b55f8d582_1783002195504.png"
+  },
+  "images:stickers/sticker-15": {
+    "taskId": "ef5f130400de9944a0490edd5b88b0c8",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/ef5f130400de9944a0490edd5b88b0c8_1783002219948.png"
+  },
+  "images:stickers/sticker-16": {
+    "taskId": "96209723819afc2cb432710a5323fbfd",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/96209723819afc2cb432710a5323fbfd_1783002339318.png"
+  },
+  "images:stickers/sticker-17": {
+    "taskId": "030a7a470bf4e83e28ceeb9e3f5c0d10",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/030a7a470bf4e83e28ceeb9e3f5c0d10_1783002197045.png"
+  },
+  "images:stickers/sticker-18": {
+    "taskId": "3b65a9f82402cf5b5363c1453a556d70",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/3b65a9f82402cf5b5363c1453a556d70_1783002220129.png"
+  },
+  "images:stickers/sticker-19": {
+    "taskId": "aa5b30220acaa8a7b069f0eef0e537b5",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/aa5b30220acaa8a7b069f0eef0e537b5_1783002224379.png"
+  },
+  "images:stickers/sticker-20": {
+    "taskId": "87a1020a8a8a09436b9da205ccd3481f",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/87a1020a8a8a09436b9da205ccd3481f_1783002202648.png"
+  },
+  "images:stickers/sticker-21": {
+    "taskId": "3f4fd502194d2959e2156121d9ca1d56",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/3f4fd502194d2959e2156121d9ca1d56_1783002222791.png"
+  },
+  "images:stickers/sticker-22": {
+    "taskId": "49c113a30d8819d3cd413faa4c2c7f86",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/49c113a30d8819d3cd413faa4c2c7f86_1783002224390.png"
+  },
+  "images:stickers/sticker-23": {
+    "taskId": "348aced2c4b982a5f982b5be5abd5d84",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/348aced2c4b982a5f982b5be5abd5d84_1783002223862.png"
+  },
+  "images:stickers/sticker-24": {
+    "taskId": "535de270bcf830324194b59f2826fb92",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/535de270bcf830324194b59f2826fb92_1783002224185.png"
+  },
+  "images:stickers/sticker-25": {
+    "taskId": "9d54ac783ed563f2c3003ec3876efc10",
+    "url": "https://tempfile.aiquickdraw.com/p/9d54ac783ed563f2c3003ec3876efc10_1_1783002216_6714.png"
+  },
+  "images:stickers/sticker-26": {
+    "taskId": "5f0d56c96f1bb463a0ffe68b7454ac05",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/5f0d56c96f1bb463a0ffe68b7454ac05_1783002205830.png"
+  },
+  "images:stickers/sticker-27": {
+    "taskId": "2c0d125e46c65477979786c311421440",
+    "url": "https://tempfile.aiquickdraw.com/p/2c0d125e46c65477979786c311421440_1_1783002207_3336.png"
+  },
+  "images:stickers/sticker-28": {
+    "taskId": "5230cc5c545f69aee5a9d46bb7fb1ab4",
+    "url": "https://tempfile.aiquickdraw.com/p/5230cc5c545f69aee5a9d46bb7fb1ab4_1_1783002221_6022.png"
+  },
+  "images:stickers/sticker-29": {
+    "taskId": "f0d1e7031083ef4211e165de161a6f57",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/f0d1e7031083ef4211e165de161a6f57_1783002231154.png"
+  },
+  "images:stickers/sticker-30": {
+    "taskId": "4447c9be7c6f4b87bff62927460fefa6",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/4447c9be7c6f4b87bff62927460fefa6_1783002231858.png"
+  },
+  "images:stickers/sticker-31": {
+    "taskId": "196a9378f7a247ac9850b2cb829137a7",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/196a9378f7a247ac9850b2cb829137a7_1783002210646.png"
+  },
+  "images:stickers/sticker-32": {
+    "taskId": "385e9940931534cf047c7869e211acf2",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/385e9940931534cf047c7869e211acf2_1783002210992.png"
+  },
+  "images:stickers/sticker-33": {
+    "taskId": "a2e3b7b96aefd99113a1a651cb683b28",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/a2e3b7b96aefd99113a1a651cb683b28_1783002210534.png"
+  },
+  "images:stickers/sticker-34": {
+    "taskId": "96ce4931b66e85ffc7a110585e64a5f7",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/96ce4931b66e85ffc7a110585e64a5f7_1783002233515.png"
+  },
+  "images:stickers/sticker-35": {
+    "taskId": "ef6d832be26c9332c179d31bcd823faa",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/ef6d832be26c9332c179d31bcd823faa_1783002216968.png"
+  },
+  "images:stickers/sticker-36": {
+    "taskId": "5455a8feab16136f71cef1450e4a133f",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/5455a8feab16136f71cef1450e4a133f_1783002217570.png"
+  },
+  "images:stickers/sticker-37": {
+    "taskId": "602238a5b043a059228b93da7586613e",
+    "url": "https://tempfile.aiquickdraw.com/p/602238a5b043a059228b93da7586613e_1_1783002485_5890.png"
+  },
+  "images:stickers/sticker-38": {
+    "taskId": "411989cf00b5bcbb57f30784f65f2eb3",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/411989cf00b5bcbb57f30784f65f2eb3_1783002218223.png"
+  },
+  "images:stickers/sticker-39": {
+    "taskId": "beaafd19fa6bbbef6a3233e5a8280509",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/beaafd19fa6bbbef6a3233e5a8280509_1783002360588.png"
+  },
+  "images:stickers/sticker-40": {
+    "taskId": "00f35d45523d4e3a39572e8e32f4dce3",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/00f35d45523d4e3a39572e8e32f4dce3_1783002240900.png"
+  },
+  "images:stickers/sticker-41": {
+    "taskId": "e4496c7e195b1bf9cc7c039e34398b61",
+    "url": "https://tempfile.aiquickdraw.com/aistudio/e4496c7e195b1bf9cc7c039e34398b61_1783002219774.png"
+  },
+  "images:stickers/sticker-42": {
+    "taskId": "1c867413da861951db72fb8e5a2d236f"
+  },
+  "images:stickers/sticker-43": {
+    "taskId": "d7afe9f47813ca44a07da41ce0c85f91"
+  },
+  "images:stickers/sticker-44": {
+    "taskId": "cd95abbbf2bc7893338985888d7561f8"
+  },
+  "images:stickers/sticker-45": {
+    "taskId": "60d2d8aef8b6c4883fda063846633cbb"
+  },
+  "images:stickers/sticker-46": {
+    "taskId": "dbdef4e12086f03560a3ecb043624411"
+  },
+  "images:stickers/sticker-47": {
+    "taskId": "aca669a9feee7f9b7a1fc38f82f58a61"
+  },
+  "images:stickers/sticker-48": {
+    "taskId": "13037a31afa7a1338538f5599f4f80df"
+  },
+  "images:stickers/sticker-49": {
+    "taskId": "81cba30c75e8b00635ddefcf25037f9c"
+  },
+  "images:stickers/sticker-50": {
+    "taskId": "1db89ffb07961bf94eb26bc49bf8f222"
+  },
+  "images:packaging/pack-01": {
+    "taskId": "d57cffc93da1577c73cedd0966949132"
+  },
+  "images:packaging/pack-02": {
+    "taskId": "f8a3f9028618a37f4cd362d19182a148"
+  },
+  "images:packaging/pack-03": {
+    "taskId": "4f2deffad23e7d184d5b115a279ed4e7"
+  },
+  "images:packaging/pack-04": {
+    "taskId": "b63a6bb8fc822c985b273de85eee9b9a"
+  },
+  "images:packaging/pack-05": {
+    "taskId": "9576b701915819d55c8d228cb3eeb513"
+  },
+  "images:packaging/pack-06": {
+    "taskId": "fdf6a865ab687faa33ab8876409bf4c7"
+  },
+  "images:packaging/pack-07": {
+    "taskId": "234547fe953a8c99c223bb15317e5cb2"
+  },
+  "images:packaging/pack-08": {
+    "taskId": "c7a2b9f93c79c05da91a29349dc4eafd"
+  },
+  "images:packaging/pack-09": {
+    "taskId": "842316d4d1aa361013baf0325db04a70"
+  },
+  "images:packaging/pack-10": {
+    "taskId": "d05f5909a5225507304f16ed88e3bc96"
+  },
+  "images:packaging/pack-11": {
+    "taskId": "f07eed52a22e74c56e33171dd3ab1b15"
+  },
+  "images:packaging/pack-12": {
+    "taskId": "eec0ae4f79c1a4254a96464071fd56d0"
+  },
+  "images:packaging/pack-13": {
+    "taskId": "e82efdb24b3e90d9504966c045e8448f"
+  },
+  "images:packaging/pack-14": {
+    "taskId": "4f680c370c2abb11e6f1c609ef5a9ec8"
+  },
+  "images:packaging/pack-15": {
+    "taskId": "e14db5e1d228a845b6b8cdcfd6431bb0"
+  },
+  "images:packaging/pack-16": {
+    "taskId": "d442b2b96079443c3f8b8e38686907f0"
+  },
+  "images:packaging/pack-17": {
+    "taskId": "d6ed03f6e4c5ef963917258c44867e3a"
+  },
+  "images:packaging/pack-18": {
+    "taskId": "d96d60719af8c19c17adf368e0b20b01"
+  },
+  "images:packaging/pack-19": {
+    "taskId": "c74d890f530bd4200891679cd96753c6"
+  },
+  "images:packaging/pack-20": {
+    "taskId": "ca2e4158979d8c3ed1e31b1d12e9f41d"
+  },
+  "images:cards/card-bloop-classic": {
+    "taskId": "ed258664a9d451d31fa6dd31bf25725c"
+  },
+  "images:cards/card-bloop-golden": {
+    "taskId": "66297b9c5d4228263dd3d3573588d9c9"
+  },
+  "images:cards/card-bloop-sleepy": {
+    "taskId": "8412d2db65492aae48e716ac47d097a2"
+  },
+  "images:cards/card-cloudie": {
+    "taskId": "2a8938b407809de9286cdcdb55565065"
+  },
+  "images:cards/card-jelly": {
+    "taskId": "cb498f9a3535597a17746259ddad709a"
+  },
+  "images:cards/card-the-gloss": {
+    "taskId": "a86a9979b85ed96f6808e3c2e619786d"
+  },
+  "images:cards/card-the-chase": {
+    "taskId": "7190d4b86d665d94305716d04193bd1b"
+  },
+  "images:cards/card-trio": {
+    "taskId": "a3a047d4146f270ec8776c9e793fb085"
+  },
+  "images:cards/card-first-roar": {
+    "taskId": "349651b2b3ecf05531c09928f6d85487"
+  },
+  "images:cards/card-snow-bloop": {
+    "taskId": "aa8ab74d2b2caf24656c3de475753bc5"
+  },
+  "images:thumbnails/thumb-chase-world": {
+    "taskId": "522ba9be1be56680c7f29f28340a537c"
+  },
+  "images:thumbnails/thumb-game": {
+    "taskId": "896fb9bb4fe359e6a01b48aa6abdb8f0"
+  },
+  "images:thumbnails/thumb-cards": {
+    "taskId": "00182d03d20c7c5f0e481e98ebc4233c"
+  },
+  "images:thumbnails/thumb-stickers": {
+    "taskId": "b695fc1a100f929e9ac49445c623abd5"
+  },
+  "images:thumbnails/thumb-trailer": {
+    "taskId": "b9380dbc2b56e5a87e4d471210e80985"
+  },
+  "images:thumbnails/poster-chase-vertical": {
+    "taskId": "901036e996f43f0fa429120a27d87f88"
+  },
+  "images:thumbnails/poster-game-vertical": {
+    "taskId": "1563c6cdf7713cdf64c05768e97006f9"
+  },
+  "images:thumbnails/poster-cards-vertical": {
+    "taskId": "1cdf559dcf934681fea364a06c32d71b"
+  },
+  "images:game/bg-far": {
+    "taskId": "6f82b9637b28252bb50dfe519af37ebf"
+  },
+  "images:game/bg-mid": {
+    "taskId": "5877cbd4198c072dc6d43887db2ec342"
+  },
+  "images:game/ground": {
+    "taskId": "7e66fa1187f92f168f3809ae8a681d76"
+  },
+  "images:game/sprite-bloop-run": {
+    "taskId": "3d6f570b8edcd9b4ae8b4e00194546f0"
+  },
+  "images:game/sprite-bloop-jump": {
+    "taskId": "bf3eb40e0d5d1755442dad5f2c7b42f5"
+  },
+  "images:game/sprite-gloss-run": {
+    "taskId": "8c5522d0ec9d2b2779de0663af60d82a"
+  },
+  "images:game/sprite-sparkle": {
+    "taskId": "e3d1620007a4ef2981dfcb07fc629c07"
+  },
+  "images:game/sprite-heart": {
+    "taskId": "002b4ba87b228f4c7524b5b1eed31c5f"
+  },
+  "images:game/sprite-raincloud": {
+    "taskId": "ce11872fcb64ae245a1887ccc95c3cca"
+  },
+  "images:game/title-art": {
+    "taskId": "b0623864428db770cccbbe005b416f57"
+  },
+  "images:unboxing/unbox-1": {
+    "taskId": "ce2a0e20ac95fcff283365a6558f60d9"
+  },
+  "images:unboxing/unbox-2": {
+    "taskId": "6efb0884dc50798851cc2d4857a0aad7"
+  },
+  "images:unboxing/unbox-3": {
+    "taskId": "b9478b76596c9bfbc484ca1cf71b97fb"
+  },
+  "images:unboxing/unbox-4": {
+    "taskId": "04d6e66cab08639da29887190d10f24c"
+  },
+  "images:unboxing/unbox-5": {
+    "taskId": "288584bf584d72b00ec9ba895ae58a00"
+  },
+  "images:unboxing/unbox-6": {
+    "taskId": "636ab1b2571ba535f7f5b552ae53aa48"
   }
 }

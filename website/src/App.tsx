@@ -40,6 +40,7 @@ const AdminSuppliers = lazy(() => import("./pages/admin/BackOffice").then((m) =>
 const BloopBooks = lazy(() => import("./pages/BloopBooks"));
 const BloopBookReader = lazy(() => import("./pages/BloopBookReader"));
 const GlossLab = lazy(() => import("./pages/GlossLab"));
+const ChaseGame = lazy(() => import("./pages/ChaseGame"));
 const AdminContent = lazy(() => import("./pages/admin/Content"));
 
 function ScrollToTop() {
@@ -115,6 +116,7 @@ export default function App() {
                   <Route path="/bloop-books" element={<BloopBooks />} />
                   <Route path="/bloop-books/:slug" element={<BloopBookReader />} />
                   <Route path="/lab" element={<GlossLab />} />
+                  <Route path="/chase" element={<ChaseGame />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>

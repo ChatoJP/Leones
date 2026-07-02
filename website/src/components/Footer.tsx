@@ -19,6 +19,7 @@ export default function Footer() {
             <li><a href="/#quiz" className="hover:text-ink">{t("footer.quiz")}</a></li>
             <li><Link to="/club" className="hover:text-ink">{t("nav.club")}</Link></li>
             <li><Link to="/bloop-books" translate="no" className="notranslate hover:text-ink">Bloop Books</Link></li>
+            <li><Link to="/chase" translate="no" className="notranslate hover:text-ink">Bloop Chase</Link></li>
             <li><Link to="/world" className="hover:text-ink">The World</Link></li>
             <li><a href="/#tv" translate="no" className="notranslate hover:text-ink">LeoNes TV</a></li>
             <li><Link to="/track" className="hover:text-ink">Track order</Link></li>

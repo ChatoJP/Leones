@@ -6,6 +6,7 @@ import Bloop from "../components/Bloop";
 import CollectionAlbum from "../components/CollectionAlbum";
 import MoodWall from "../components/MoodWall";
 import PlushieWorld from "../components/PlushieWorld";
+import ChaseWorld from "../components/ChaseWorld";
 import Sticker from "../components/Sticker";
 import ForYou from "../components/ForYou";
 import HeartButton from "../components/HeartButton";
@@ -951,6 +952,7 @@ export default function Home() {
       <TurnPink />
       <Drop />
       <PlushieWorld />
+      <ChaseWorld />
       <MoodWall />
       <GlossQuiz />
       <ForYou />
