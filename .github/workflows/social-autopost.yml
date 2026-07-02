@@ -1,0 +1,36 @@
+# Free automated social posting: one video per platform per day at 17:00 UTC
+# (prime after-school time in PT). Runs on GitHub's free Actions minutes.
+# Add the platform secrets in Settings → Secrets → Actions to activate each
+# platform — until then the run logs "skipped" and costs nothing.
+name: social-autopost
+
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch: {} # manual "post now" button in the Actions tab
+
+permissions:
+  contents: write # the queue file records what was posted
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Post next queued item per platform
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
+        run: node tools/social-autopost.mjs post
+      - name: Persist queue state
+        run: |
+          git config user.name "leones-autopost"
+          git config user.email "noreply@leones.co"
+          git add content-library/posting-queue.json
+          git diff --cached --quiet || git commit -m "autopost: record posted items"
+          git push

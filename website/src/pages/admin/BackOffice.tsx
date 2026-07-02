@@ -11,6 +11,7 @@ export function AdminNav({ active }: { active: string }) {
     ["suppliers", "Suppliers", "/admin/suppliers"],
     ["rewards", "Rewards", "/admin/rewards"],
     ["stats", "Stats", "/admin/stats"],
+    ["content", "Content", "/admin/content"],
   ];
   return (
     <div className="mb-6 flex flex-wrap gap-2">

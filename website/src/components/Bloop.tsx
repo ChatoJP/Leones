@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { earnAchievement } from "../lib/achievements";
+import { awardRoars } from "../lib/roars";
 import { confettiBurst } from "../lib/confetti";
 import { useI18n } from "../lib/i18n";
-import { pop, sparkleChime } from "../lib/sound";
+import { fanfare, kazoo, pop, sparkleChime } from "../lib/sound";
 
 const KEY = "leones-boops";
 const EVENT = "leones-boop";
@@ -33,7 +35,7 @@ export function useBoops(): number {
 }
 
 /** A boopable plushie. Click = squish + squeak + heart + counter. */
-export default function Boop({
+export default function Bloop({
   src = "/mascots/boop.webp",
   className = "",
   imgClassName = "",
@@ -56,20 +58,28 @@ export default function Boop({
     setSquish((s) => s + 1);
     setPlusOne(n);
     setTimeout(() => setPlusOne(null), 900);
-    if (n % 10 === 0) {
+    if (n === 500) {
+      kazoo(); // the ridiculous moment they earned
+      confettiBurst(e.clientX, e.clientY, 60);
+    } else if (n === 100) {
+      fanfare();
+      confettiBurst(e.clientX, e.clientY, 40);
+    } else if (n % 10 === 0) {
       sparkleChime();
       confettiBurst(e.clientX, e.clientY, 24);
     } else {
       pop();
       confettiBurst(e.clientX, e.clientY, 6);
     }
+    if (n % 10 === 0) awardRoars(1);
+    if (n >= 50) earnAchievement("boop-fan");
   };
 
   return (
     <div className={`relative inline-block ${className}`}>
       <motion.button
         onClick={doBoop}
-        aria-label={lang === "pt" ? `Boopa o Boop (${boops} boops)` : `Boop the Boop (${boops} boops)`}
+        aria-label={lang === "pt" ? `Bloopa o Bloop (${boops} boops)` : `Bloop the Bloop (${boops} boops)`}
         animate={float ? { y: [0, -8, 0] } : undefined}
         transition={float ? { duration: 3, repeat: Infinity, ease: "easeInOut" } : undefined}
         whileHover={{ scale: 1.06, rotate: -3 }}

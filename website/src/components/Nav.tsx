@@ -1,14 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
 import { useCart } from "../context/CartContext";
 import { useI18n } from "../lib/i18n";
+import RoarsChip from "./RoarsChip";
 import SearchOverlay from "./SearchOverlay";
+
+function useIsAdmin(): boolean {
+  const { user } = useAuth();
+  const [isAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    if (!user) { setIsAdmin(false); return; }
+    fetch("/api/admin/me", { credentials: "include" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => setIsAdmin(Boolean(d?.isAdmin)))
+      .catch(() => setIsAdmin(false));
+  }, [user]);
+  return isAdmin;
+}
 
 export default function Nav() {
   const { count } = useCart();
   const { user } = useAuth();
+  const isAdmin = useIsAdmin();
   const { lang, setLang, t } = useI18n();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -18,6 +33,7 @@ export default function Nav() {
     { href: "/#parents", label: t("nav.parents") },
     { href: "/club", label: t("nav.club") },
     { href: "/bloop-books", label: t("nav.books"), brand: true },
+    { href: "/lab", label: lang === "pt" ? "O Lab ✦" : "The Lab ✦" },
     { href: "/#tv", label: "LeoNes TV", brand: true },
     { href: "/#challenge", label: "#JellyBoop", brand: true },
   ];
@@ -54,6 +70,15 @@ export default function Nav() {
         </div>
 
         <div className="flex items-center gap-1.5 sm:gap-2">
+          {isAdmin && (
+            <Link
+              to="/admin/stats"
+              className="hidden rounded-full bg-gold/30 px-4 py-2.5 text-xs font-extrabold uppercase tracking-wide text-amber shadow-sm ring-1 ring-gold/50 transition hover:scale-105 sm:block"
+            >
+              Admin
+            </Link>
+          )}
+          <RoarsChip />
           <button
             onClick={() => setSearchOpen(true)}
             aria-label={t("nav.search")}

@@ -1,0 +1,41 @@
+{
+  "images:poses/pose-01": {
+    "taskId": "7a6ebcedbed65d0c4adf3901770d574e"
+  },
+  "videos:trailer/act1": {
+    "taskId": "56eb5d706f320b47d772ac4e6c124785",
+    "url": "https://tempfile.aiquickdraw.com/v/56eb5d706f320b47d772ac4e6c124785_1783002214.mp4"
+  },
+  "videos:trailer/act2": {
+    "taskId": "d63bf2ecfb2f4d39576dfe73bfe19eb7",
+    "url": "https://tempfile.aiquickdraw.com/v/d63bf2ecfb2f4d39576dfe73bfe19eb7_1783002225.mp4"
+  },
+  "videos:loops/run-cycle": {
+    "taskId": "4500df7fcf62fb6b57ba3c8900aa7ae1",
+    "url": "https://tempfile.aiquickdraw.com/v/4500df7fcf62fb6b57ba3c8900aa7ae1_1783002266.mp4"
+  },
+  "videos:loops/chase-cycle": {
+    "taskId": "f1aeeffed49c22186476fe6a94932974",
+    "url": "https://tempfile.aiquickdraw.com/v/f1aeeffed49c22186476fe6a94932974_1783002250.mp4"
+  },
+  "videos:tiktok/chase-fails": {
+    "taskId": "0358f08935994b9ee84a204e5acf7d75",
+    "url": "https://tempfile.aiquickdraw.com/v/0358f08935994b9ee84a204e5acf7d75_1783002224.mp4"
+  },
+  "videos:tiktok/gloss-pov": {
+    "taskId": "b12ed702426d2a924fe09e9d6d938352",
+    "url": "https://tempfile.aiquickdraw.com/v/b12ed702426d2a924fe09e9d6d938352_1783002239.mp4"
+  },
+  "videos:tiktok/card-pack-asmr": {
+    "taskId": "7d97297edb346563c7fb125f49171a67"
+  },
+  "videos:tiktok/sticker-magic": {
+    "taskId": "14e42a7a01ffc150fc4bf37190c91cb6"
+  },
+  "videos:tiktok/bloop-vs-vacuum": {
+    "taskId": "db30100e3a55e32fec19f7f96a62d03d"
+  },
+  "videos:tiktok/cloudie-drives": {
+    "taskId": "2bc8b480a37dd7fcde1e6bb5ef8b6b82"
+  }
+}

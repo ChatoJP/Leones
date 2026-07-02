@@ -2,6 +2,9 @@
 // ever added to their bag (localStorage, device-local, no account needed).
 
 import { useEffect, useState } from "react";
+import { earnAchievement } from "./achievements";
+
+const ALBUM_SIZE = 10; // Gloss Collection 01
 
 const KEY = "leones-collection-v1";
 const EVENT = "leones-collection-change";
@@ -20,6 +23,7 @@ export function collect(sku: string) {
   set.add(sku);
   localStorage.setItem(KEY, JSON.stringify([...set]));
   window.dispatchEvent(new CustomEvent(EVENT));
+  if (set.size >= ALBUM_SIZE) earnAchievement("collector");
 }
 
 export function useCollection(): Set<string> {

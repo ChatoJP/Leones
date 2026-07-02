@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Boop from "../components/Boop";
+import Bloop from "../components/Bloop";
 import FloatingParticles from "../components/FloatingParticles";
 import Sticker from "../components/Sticker";
 import { useI18n } from "../lib/i18n";
@@ -12,8 +12,8 @@ const COPY = {
     eyebrow: "the bloop book club",
     title1: "Read 1 book.",
     title2: "Unlock 1 surprise.",
-    sub: "Short illustrated Boop stories. Finish one, pass the tiny quiz, and unlock what Boop prepared. (Sincere question: did you really read it? Boop may ask your parents 😄)",
-    why: "\"Bloop\" is the sound Boop makes when it falls asleep on a book. It happens a lot.",
+    sub: "Short illustrated Bloop stories. Finish one, pass the tiny quiz, and unlock what Bloop prepared. (Sincere question: did you really read it? Bloop may ask your parents 😄)",
+    why: "\"Bloop\" is the sound Bloop makes when it falls asleep on a book. It happens a lot.",
     read: "Read",
     continue: "Continue",
     done: "Finished ✦",
@@ -23,8 +23,8 @@ const COPY = {
     eyebrow: "o bloop book club",
     title1: "Lê 1 livro.",
     title2: "Desbloqueia 1 surpresa.",
-    sub: "Histórias curtas e ilustradas do Boop. Acaba uma, passa o mini-quiz, e desbloqueia o que o Boop preparou. (Pergunta sincera: leste mesmo? O Boop é capaz de perguntar aos teus pais 😄)",
-    why: "\"Bloop\" é o som que o Boop faz quando adormece em cima de um livro. Acontece muitas vezes.",
+    sub: "Histórias curtas e ilustradas do Bloop. Acaba uma, passa o mini-quiz, e desbloqueia o que o Bloop preparou. (Pergunta sincera: leste mesmo? O Bloop é capaz de perguntar aos teus pais 😄)",
+    why: "\"Bloop\" é o som que o Bloop faz quando adormece em cima de um livro. Acontece muitas vezes.",
     read: "Ler",
     continue: "Continuar",
     done: "Terminado ✦",
@@ -43,7 +43,7 @@ export default function BloopBooks() {
         <FloatingParticles count={10} />
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <div className="inline-block">
-            <Boop imgClassName="h-28 w-auto" />
+            <Bloop imgClassName="h-28 w-auto" />
           </div>
           <p className="mt-4 text-xs font-extrabold uppercase tracking-[0.25em] text-amber">{c.eyebrow}</p>
           <h1 className="font-display mt-2 text-4xl font-semibold text-ink sm:text-6xl">

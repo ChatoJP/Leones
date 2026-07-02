@@ -127,7 +127,7 @@ export const products: Product[] = [
     slug: "jelly-lip-mask",
     sku: "LN-LIP-008",
     name: "Jelly Lip Mask",
-    tagline: "Boop-approved.",
+    tagline: "Bloop-approved.",
     price: 15,
     description:
       "A bouncy pink jelly that hugs your lips for ten minutes and leaves them glowing. Yes, it wobbles.",

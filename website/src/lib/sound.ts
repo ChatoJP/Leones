@@ -32,6 +32,53 @@ export function pop() {
   }
 }
 
+/** Triumphant little fanfare — big boop milestones (100). */
+export function fanfare() {
+  if (!soundEnabled()) return;
+  try {
+    ctx ??= new AudioContext();
+    const t = ctx.currentTime;
+    [[523, 0], [659, 0.12], [784, 0.24], [1047, 0.38]].forEach(([f, d]) => {
+      const osc = ctx!.createOscillator();
+      const gain = ctx!.createGain();
+      osc.type = "triangle";
+      osc.frequency.value = f;
+      gain.gain.setValueAtTime(0.09, t + d);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + d + 0.4);
+      osc.connect(gain).connect(ctx!.destination);
+      osc.start(t + d);
+      osc.stop(t + d + 0.45);
+    });
+  } catch {
+    /* audio unavailable */
+  }
+}
+
+/** Ridiculous kazoo moment — reserved for the 500th boop. */
+export function kazoo() {
+  if (!soundEnabled()) return;
+  try {
+    ctx ??= new AudioContext();
+    const t = ctx.currentTime;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = "sawtooth";
+    osc.frequency.setValueAtTime(330, t);
+    osc.frequency.linearRampToValueAtTime(392, t + 0.15);
+    osc.frequency.linearRampToValueAtTime(330, t + 0.3);
+    osc.frequency.linearRampToValueAtTime(494, t + 0.5);
+    osc.frequency.linearRampToValueAtTime(523, t + 0.7);
+    gain.gain.setValueAtTime(0.07, t);
+    gain.gain.setValueAtTime(0.07, t + 0.85);
+    gain.gain.exponentialRampToValueAtTime(0.001, t + 1.05);
+    osc.connect(gain).connect(ctx.destination);
+    osc.start(t);
+    osc.stop(t + 1.1);
+  } catch {
+    /* audio unavailable */
+  }
+}
+
 export function sparkleChime() {
   if (!soundEnabled()) return;
   try {

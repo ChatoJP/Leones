@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import FloatingParticles from "../components/FloatingParticles";
-import Boop from "../components/Boop";
+import Bloop from "../components/Bloop";
 import HeartButton from "../components/HeartButton";
 import Sticker from "../components/Sticker";
 import { money } from "../components/shop/Ui";
@@ -284,7 +284,7 @@ export default function Product() {
               />
             </motion.div>
             <div className="absolute -right-4 -top-6 z-10 rotate-12 sm:-right-2">
-              <Boop float={false} showCounter={false} imgClassName="h-20 w-auto sm:h-24" />
+              <Bloop float={false} showCounter={false} imgClassName="h-20 w-auto sm:h-24" />
             </div>
             <div className="mt-4 flex gap-3 overflow-x-auto pb-1">
               {content.gallery.map((g, i) => (

@@ -1138,6 +1138,11 @@
     },
     "proof-frame-v2": {
       "file": "assets/ecosystem/website/proof-frame-v2.png"
+    },
+    "sticker-star": {
+      "taskId": "cfe7bd7dc9734a9c8e024bc64b8da316",
+      "url": "https://tempfile.aiquickdraw.com/aistudio/cfe7bd7dc9734a9c8e024bc64b8da316_1783001188982.png",
+      "file": "assets/ecosystem/stickers/sticker-star.png"
     }
   }
 }

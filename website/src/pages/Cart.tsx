@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Boop from "../components/Boop";
+import Bloop from "../components/Bloop";
 import { useCart } from "../context/CartContext";
 import { useI18n } from "../lib/i18n";
 import { products } from "../data/products";
@@ -16,7 +16,7 @@ export default function Cart() {
       <ShopShell title={t("cart.title")} narrow>
         <Card className="text-center">
           <div className="mx-auto inline-block">
-            <Boop src="/mascots/boop-sad.webp" imgClassName="h-36 w-auto" />
+            <Bloop src="/mascots/boop-sad.webp" imgClassName="h-36 w-auto" />
           </div>
           <p className="font-display mt-4 text-2xl font-semibold text-ink">{t("cart.empty.title")}</p>
           <p className="mt-2 font-semibold text-ink/60">{t("cart.empty.sub")}</p>
@@ -34,7 +34,7 @@ export default function Cart() {
   return (
     <ShopShell title={t("cart.title")} subtitle={`${count} ${count === 1 ? "treasure" : "treasures"} inside.`}>
       <div className="mb-6 flex items-center gap-3 rounded-3xl bg-pink/20 px-5 py-3">
-        <Boop src="/mascots/boop-happy.webp" float={false} showCounter={false} imgClassName="h-14 w-auto" />
+        <Bloop src="/mascots/boop-happy.webp" float={false} showCounter={false} imgClassName="h-14 w-auto" />
         <p className="text-sm font-extrabold text-ink">{t("cart.cuter")}</p>
       </div>
       <div className="grid gap-6 lg:grid-cols-[1fr_20rem]">

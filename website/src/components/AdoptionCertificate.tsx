@@ -69,7 +69,7 @@ async function render(order: OrderDto, glossName: string | null, lang: "en" | "p
 
   ctx.fillStyle = "#3a2e3d";
   ctx.font = "600 30px Georgia, serif";
-  ctx.fillText(lang === "pt" ? "testemunhado pelo Boop 🐾" : "witnessed by Boop 🐾", W / 2, 1250);
+  ctx.fillText(lang === "pt" ? "testemunhado pelo Bloop 🐾" : "witnessed by Bloop 🐾", W / 2, 1250);
   ctx.font = "700 34px Georgia, serif";
   ctx.fillText("LeoNes ✦ leones.co", W / 2, 1300);
 

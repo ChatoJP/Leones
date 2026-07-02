@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import AmbientHero from "../components/AmbientHero";
-import Boop from "../components/Boop";
+import Bloop from "../components/Bloop";
 import CollectionAlbum from "../components/CollectionAlbum";
 import MoodWall from "../components/MoodWall";
 import PlushieWorld from "../components/PlushieWorld";
@@ -28,9 +28,9 @@ const HOME_COPY = {
     heroMicro: "Cute, giftable and made to feel special.",
     scrollTitle1: "Made for the",
     scrollTitle2: "scroll",
-    bagSad: "Boop looked everywhere. The bag is empty.",
+    bagSad: "Bloop looked everywhere. The bag is empty.",
     bagCute: "Your bag is getting cuter ✦",
-    successBoop: "Boop found your gloss!",
+    successBoop: "Bloop found your gloss!",
     chip1: "✦ Gloss Collection 01",
     chip2: "💗 clear-to-pink inspired",
     marquee: ["clear to pink", "ph magic", "10-piece drop", "gift-ready packaging", "early concept drop"],
@@ -69,7 +69,7 @@ const HOME_COPY = {
       ["Regulatory status", "To be confirmed with the responsible person (EU)."],
     ],
     chEyebrow: "the challenge",
-    chTitle1: "Boop it. Film it.",
+    chTitle1: "Bloop it. Film it.",
     chTitle2: "Send it.",
     chBody: "#JellyBoop is taking over. Duet us, tag @leones — best boops get featured (and a surprise box).",
     chHooks: ["do NOT trust the jelly", "team blue or team pink?", "main character energy"],
@@ -106,9 +106,9 @@ const HOME_COPY = {
     heroMicro: "Fofo, para oferecer e feito para ser especial.",
     scrollTitle1: "Feito para o",
     scrollTitle2: "scroll",
-    bagSad: "O Boop procurou em todo o lado. A mala está vazia.",
+    bagSad: "O Bloop procurou em todo o lado. A mala está vazia.",
     bagCute: "A tua mala está a ficar mais fofa ✦",
-    successBoop: "O Boop encontrou o teu gloss!",
+    successBoop: "O Bloop encontrou o teu gloss!",
     chip1: "✦ Gloss Collection 01",
     chip2: "💗 inspirado em transparente-para-rosa",
     marquee: ["transparente para rosa", "magia ph", "drop de 10 peças", "embalagem de presente", "drop de conceito"],
@@ -147,7 +147,7 @@ const HOME_COPY = {
       ["Estado regulatório", "A confirmar com a pessoa responsável (UE)."],
     ],
     chEyebrow: "o desafio",
-    chTitle1: "Boop. Filma.",
+    chTitle1: "Bloop. Filma.",
     chTitle2: "Envia.",
     chBody: "O #JellyBoop está a conquistar tudo. Faz duet, marca @leones — os melhores boops são destacados (e recebem uma caixa surpresa).",
     chHooks: ["NÃO confies na gelatina", "team azul ou team rosa?", "energia de protagonista"],
@@ -317,9 +317,9 @@ function Hero() {
           >
             {hc.chip2}
           </motion.div>
-          {/* Boop cameo — boopable! */}
+          {/* Bloop cameo — boopable! */}
           <div className="absolute -bottom-6 -left-14 sm:-left-24">
-            <Boop imgClassName="h-24 w-auto sm:h-36" />
+            <Bloop imgClassName="h-24 w-auto sm:h-36" />
           </div>
           <div className="absolute -bottom-2 right-2 sm:-right-10">
             <Sticker tone="pink" rotate={6} wiggle>{hc.stickerHero}</Sticker>

@@ -104,7 +104,7 @@ export default function AdminRewards() {
         })}
       </div>
       <p className="mt-5 text-xs font-bold text-ink/60">
-        Inactive = readers see "Boop is still preparing this surprise" (honest). Active = the reward text is shown on unlock.
+        Inactive = readers see "Bloop is still preparing this surprise" (honest). Active = the reward text is shown on unlock.
       </p>
     </ShopShell>
   );

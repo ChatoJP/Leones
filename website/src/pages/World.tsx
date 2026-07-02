@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ActivityStickers from "../components/ActivityStickers";
 import FloatingParticles from "../components/FloatingParticles";
+import { earnAchievement } from "../lib/achievements";
 import { useI18n } from "../lib/i18n";
 import { products } from "../data/products";
 
@@ -38,6 +41,8 @@ const W = {
 export default function World() {
   const { lang, lp } = useI18n();
   const w = W[lang];
+  // stepping into the World earns the first sticker — everyone starts somewhere
+  useEffect(() => { earnAchievement("explorer"); }, []);
   return (
     <>
       {/* hero: the chase scene */}
@@ -136,6 +141,29 @@ export default function World() {
         <p className="mt-4 text-xs font-bold text-ink/60">
           {w.fanNote}
         </p>
+      </section>
+
+      {/* the journey: every play checkpoint, mapped onto the LeoNes world */}
+      <section className="relative overflow-hidden py-20">
+        <img
+          src="/scenes/world-map.webp"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-cloud via-cloud/60 to-cloud" aria-hidden="true" />
+        <div className="relative mx-auto max-w-5xl px-6">
+          <div className="mb-8 text-center">
+            <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-amber">
+              {lang === "pt" ? "a tua viagem" : "your journey"}
+            </p>
+            <h2 className="font-display mt-2 text-4xl font-semibold text-ink sm:text-5xl">
+              {lang === "pt" ? <>O teu caminho pelo <em className="text-pink-deep">mundo</em></> : <>Your path through the <em className="text-pink-deep">world</em></>}
+            </h2>
+          </div>
+          <ActivityStickers variant="path" />
+        </div>
       </section>
     </>
   );

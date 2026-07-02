@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { earnAchievement } from "../lib/achievements";
 import { confettiBurst } from "../lib/confetti";
 import { useI18n } from "../lib/i18n";
 import { products } from "../data/products";
@@ -81,7 +82,10 @@ export default function GlossQuiz() {
     : null;
 
   useEffect(() => {
-    if (winner) localStorage.setItem("leones-quiz-match", winner.sku);
+    if (winner) {
+      localStorage.setItem("leones-quiz-match", winner.sku);
+      earnAchievement("quiz-match");
+    }
   }, [winner]);
 
   const answer = (points: Record<string, number>) => {

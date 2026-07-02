@@ -601,4 +601,31 @@ app.get("/api/admin/me", (req, res) => {
   res.json({ isAdmin: !!user && ADMIN_EMAILS.includes(user.email.toLowerCase()) });
 });
 
+/* ---------------- content library (admin) ---------------- */
+
+const CONTENT_DIR = join(ROOT, "..", "..", "content-library");
+
+// raw files (previews, newsletter HTML) — admin only, pre-launch material
+app.use("/content-library", requireAdmin, express.static(CONTENT_DIR));
+
+app.get("/api/admin/content", requireAdmin, async (req, res) => {
+  const { readdirSync, statSync } = await import("node:fs");
+  const byFolder = {};
+  const walk = (dir, rel) => {
+    for (const name of readdirSync(dir)) {
+      const p = join(dir, name);
+      const r = rel ? `${rel}/${name}` : name;
+      if (statSync(p).isDirectory()) { walk(p, r); continue; }
+      const folder = rel || "(root)";
+      (byFolder[folder] ??= []).push({ name, path: r, size: statSync(p).size });
+    }
+  };
+  try {
+    walk(CONTENT_DIR, "");
+    res.json({ folders: byFolder });
+  } catch (err) {
+    res.status(500).json({ error: `content-library unavailable: ${err.message}` });
+  }
+});
+
 app.listen(PORT, () => console.log(`[leones-api] listening on http://localhost:${PORT}`));

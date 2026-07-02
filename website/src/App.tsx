@@ -8,6 +8,8 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
 import { BackToTop, MascotPeek, ScrollProgress, SparkleTrail } from "./components/FunLayer";
+import FindJelly from "./components/FindJelly";
+import PartyMode from "./components/PartyMode";
 import Home from "./pages/Home";
 
 const Product = lazy(() => import("./pages/Product"));
@@ -37,6 +39,8 @@ const AdminCosts = lazy(() => import("./pages/admin/BackOffice").then((m) => ({ 
 const AdminSuppliers = lazy(() => import("./pages/admin/BackOffice").then((m) => ({ default: m.AdminSuppliers })));
 const BloopBooks = lazy(() => import("./pages/BloopBooks"));
 const BloopBookReader = lazy(() => import("./pages/BloopBookReader"));
+const GlossLab = lazy(() => import("./pages/GlossLab"));
+const AdminContent = lazy(() => import("./pages/admin/Content"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -107,8 +111,10 @@ export default function App() {
                   <Route path="/admin/expeditions" element={<AdminExpeditions />} />
                   <Route path="/admin/costs" element={<AdminCosts />} />
                   <Route path="/admin/suppliers" element={<AdminSuppliers />} />
+                  <Route path="/admin/content" element={<AdminContent />} />
                   <Route path="/bloop-books" element={<BloopBooks />} />
                   <Route path="/bloop-books/:slug" element={<BloopBookReader />} />
+                  <Route path="/lab" element={<GlossLab />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
@@ -118,6 +124,8 @@ export default function App() {
           </div>
           <MascotPeek />
           <BackToTop />
+          <FindJelly />
+          <PartyMode />
         </BrowserRouter>
       </CartProvider>
     </AuthProvider>

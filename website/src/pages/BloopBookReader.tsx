@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import Boop from "../components/Boop";
+import Bloop from "../components/Bloop";
 import { Card, ErrorNote, Field, PrimaryButton } from "../components/shop/Ui";
 import { confettiBurst } from "../lib/confetti";
 import { useI18n } from "../lib/i18n";
@@ -13,30 +13,30 @@ const COPY = {
   en: {
     back: "← All books", pageOf: (a: number, b: number) => `page ${a} of ${b}`,
     next: "Next →", prev: "← Back", theEnd: "The end ✦", toQuiz: "Take the tiny quiz",
-    quizTitle: "The tiny quiz", quizSub: "Three questions. Boop believes in you.",
+    quizTitle: "The tiny quiz", quizSub: "Three questions. Bloop believes in you.",
     tryAgain: "Almost! Read again or try once more ✦", quizDone: "You really read it! ✦",
-    parentTitle: "One last thing 😄", parentSub: "Boop keeps its promises with parents. A parent or guardian confirms, and the surprise unlocks.",
+    parentTitle: "One last thing 😄", parentSub: "Bloop keeps its promises with parents. A parent or guardian confirms, and the surprise unlocks.",
     childName: "Your first name (for the certificate)", parentEmail: "Parent or guardian email",
     parentCheck: "I'm the parent/guardian and I confirm this reading",
     confirm: "Confirm reading",
     rewardTitle: "Unlocked! ✦", rewardBadge: "Reader badge earned",
-    rewardActive: (v: string) => `Boop prepared: ${v}`,
-    rewardPending: "Boop is still preparing this book's surprise — your badge and certificate are yours forever, and the surprise arrives with the public launch. No fake promises here.",
+    rewardActive: (v: string) => `Bloop prepared: ${v}`,
+    rewardPending: "Bloop is still preparing this book's surprise — your badge and certificate are yours forever, and the surprise arrives with the public launch. No fake promises here.",
     cert: "🐾 Download reading certificate", certPreparing: "Preparing…",
     lost: "This story ran off with the gloss.",
   },
   pt: {
     back: "← Todos os livros", pageOf: (a: number, b: number) => `página ${a} de ${b}`,
     next: "Seguinte →", prev: "← Voltar", theEnd: "Fim ✦", toQuiz: "Fazer o mini-quiz",
-    quizTitle: "O mini-quiz", quizSub: "Três perguntas. O Boop acredita em ti.",
+    quizTitle: "O mini-quiz", quizSub: "Três perguntas. O Bloop acredita em ti.",
     tryAgain: "Quase! Relê ou tenta outra vez ✦", quizDone: "Leste mesmo! ✦",
-    parentTitle: "Uma última coisa 😄", parentSub: "O Boop cumpre as promessas com os pais. Um pai/mãe ou responsável confirma, e a surpresa desbloqueia.",
+    parentTitle: "Uma última coisa 😄", parentSub: "O Bloop cumpre as promessas com os pais. Um pai/mãe ou responsável confirma, e a surpresa desbloqueia.",
     childName: "O teu primeiro nome (para o certificado)", parentEmail: "Email do pai/mãe ou responsável",
     parentCheck: "Sou o responsável e confirmo esta leitura",
     confirm: "Confirmar leitura",
     rewardTitle: "Desbloqueado! ✦", rewardBadge: "Crachá de leitura ganho",
-    rewardActive: (v: string) => `O Boop preparou: ${v}`,
-    rewardPending: "O Boop ainda está a preparar a surpresa deste livro — o teu crachá e certificado são teus para sempre, e a surpresa chega com o lançamento público. Aqui não há promessas falsas.",
+    rewardActive: (v: string) => `O Bloop preparou: ${v}`,
+    rewardPending: "O Bloop ainda está a preparar a surpresa deste livro — o teu crachá e certificado são teus para sempre, e a surpresa chega com o lançamento público. Aqui não há promessas falsas.",
     cert: "🐾 Descarregar certificado de leitura", certPreparing: "A preparar…",
     lost: "Esta história fugiu com o gloss.",
   },
@@ -82,7 +82,7 @@ async function renderCertificate(bookTitle: string, reader: string, lang: "en" |
   ctx.fillText(new Date().toLocaleDateString(lang === "pt" ? "pt-PT" : "en-IE", { day: "numeric", month: "long", year: "numeric" }), W / 2, 1010);
   ctx.fillStyle = "#3a2e3d"; ctx.font = "600 30px Georgia, serif";
   ctx.fillText(lang === "pt" ? "quiz superado · confirmado pelos pais" : "quiz passed · parent confirmed", W / 2, 1130);
-  ctx.fillText(lang === "pt" ? "testemunhado pelo Boop 🐾" : "witnessed by Boop 🐾", W / 2, 1185);
+  ctx.fillText(lang === "pt" ? "testemunhado pelo Bloop 🐾" : "witnessed by Bloop 🐾", W / 2, 1185);
   ctx.font = "700 34px Georgia, serif";
   ctx.fillText("LeoNes ✦ leones.co", W / 2, 1265);
   return canvas.toDataURL("image/png");
@@ -306,7 +306,7 @@ export default function BloopBookReader() {
           <motion.div key="reward" initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }} className="mt-8">
             <Card className="text-center">
               <div className="inline-block">
-                <Boop src="/mascots/boop-happy.webp" imgClassName="h-32 w-auto" showCounter={false} />
+                <Bloop src="/mascots/boop-happy.webp" imgClassName="h-32 w-auto" showCounter={false} />
               </div>
               <h2 className="font-display mt-3 text-3xl font-semibold text-ink">{c.rewardTitle}</h2>
               <p className="mt-2 inline-block rounded-full bg-gold/25 px-4 py-1.5 text-sm font-extrabold text-amber">

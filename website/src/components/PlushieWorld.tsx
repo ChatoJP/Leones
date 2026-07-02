@@ -11,13 +11,13 @@ const COPY = {
     title2: "plushie world",
     sub: "The pH Gloss is the star. These three live around it — and one of them just can't let it go.",
     note: "Fictional plush characters from the LeoNes universe — collectible plush versions are a planned drop.",
-    waitTitle: "Want a real Boop? 🧸",
+    waitTitle: "Want a real Bloop? 🧸",
     waitSub: "Join the plush waitlist — first to know when they exist.",
     waitPh: "your@email.com",
     waitBtn: "Tell me first",
     waitDone: "You're on the plush list ✦",
     cast: [
-      { img: "/mascots/boop.webp", name: "Boop", role: "always chasing the gloss", personality: "dramatic · fast · obsessed · funny", sticker: "cute enough to chase" },
+      { img: "/mascots/boop.webp", name: "Bloop", role: "always chasing the gloss", personality: "dramatic · fast · obsessed · funny", sticker: "cute enough to chase" },
       { img: "/mascots/cloudie.webp", name: "Cloudie", role: "soft cloud-cap energy", personality: "dreamy · sleepy · sweet", sticker: "cloud-soft energy" },
       { img: "/mascots/jelly.webp", name: "Jelly", role: "sparkle mood keeper", personality: "chaotic · glittery · cute", sticker: "tiny gloss, big mood" },
     ],
@@ -28,13 +28,13 @@ const COPY = {
     title2: "mundo plushie",
     sub: "O pH Gloss é a estrela. Estes três vivem à volta dele — e um deles não consegue largá-lo.",
     note: "Personagens de peluche fictícias do universo LeoNes — versões colecionáveis em peluche são um drop planeado.",
-    waitTitle: "Queres um Boop a sério? 🧸",
+    waitTitle: "Queres um Bloop a sério? 🧸",
     waitSub: "Entra na lista de espera dos peluches — és a primeira a saber.",
     waitPh: "teu@email.com",
     waitBtn: "Avisa-me primeiro",
     waitDone: "Estás na lista dos peluches ✦",
     cast: [
-      { img: "/mascots/boop.webp", name: "Boop", role: "sempre a perseguir o gloss", personality: "dramático · rápido · obcecado · engraçado", sticker: "fofo demais para não perseguir" },
+      { img: "/mascots/boop.webp", name: "Bloop", role: "sempre a perseguir o gloss", personality: "dramático · rápido · obcecado · engraçado", sticker: "fofo demais para não perseguir" },
       { img: "/mascots/cloudie.webp", name: "Cloudie", role: "energia de tampa-nuvem", personality: "sonhadora · dorminhoca · doce", sticker: "energia nuvem-macia" },
       { img: "/mascots/jelly.webp", name: "Jelly", role: "guardiã do mood brilhante", personality: "caótica · glitterosa · fofa", sticker: "gloss pequeno, mood grande" },
     ],
@@ -143,7 +143,7 @@ export default function PlushieWorld() {
 
         <img
           src="/mascots/group.webp"
-          alt="Boop, Cloudie and Jelly gathered around the pH Gloss"
+          alt="Bloop, Cloudie and Jelly gathered around the pH Gloss"
           loading="lazy"
           className="mx-auto mt-12 w-full max-w-3xl rounded-[2.5rem] shadow-2xl ring-8 ring-white/70"
         />

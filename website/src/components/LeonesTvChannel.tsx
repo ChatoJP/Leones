@@ -1,6 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Sticker from "./Sticker";
+import { earnAchievement } from "../lib/achievements";
+import { awardRoars } from "../lib/roars";
 import { confettiBurst } from "../lib/confetti";
 import { useI18n } from "../lib/i18n";
 import { sparkleChime } from "../lib/sound";
@@ -23,33 +25,50 @@ function award(game: string): number | null {
   localStorage.setItem(GKEY, JSON.stringify(done));
   const n = readPoints() + 1;
   localStorage.setItem(PKEY, String(n));
+  awardRoars(5); // every TV point feeds the one wallet
+  if (Object.keys(done).length >= 3) earnAchievement("game-winner");
   return n;
 }
+
+export const gamesWon = () => Object.keys(readDone()).length;
+
+/* Secret episodes: unlocked by winning games — content as reward, never purchases. */
+const SECRETS = [
+  { src: "/videos/tv/secret-heist.mp4", needs: 1, en: "The gloss heist", pt: "O assalto ao gloss" },
+  { src: "/videos/tv/secret-mirror-twin.mp4", needs: 2, en: "Jelly's mirror twin", pt: "A gémea do espelho" },
+  { src: "/videos/tv/secret-cloud-bow.mp4", needs: 3, en: "The tiny bow ceremony", pt: "A cerimónia do lacinho" },
+  { src: "/videos/tv/secret-dream-vanity.mp4", needs: 4, en: "The dream vanity", pt: "O toucador de sonho" },
+  { src: "/videos/tv/secret-sky-drop.mp4", needs: 5, en: "The sky drop", pt: "O drop do céu" },
+];
+
+/* Mascot reactions: the cast celebrates right answers and encourages retries. */
+const REACT_RIGHT = ["/mascots/expressions/cloudie-laugh.webp", "/mascots/expressions/boop-cheer.webp", "/mascots/expressions/cloudie-hearteyes.webp", "/mascots/expressions/jelly-giggle.webp"];
+const REACT_WRONG = ["/mascots/expressions/boop-think.webp", "/mascots/expressions/cloudie-surprised.webp"];
 
 /* ---------------- content ---------------- */
 
 type Tab = "funny" | "asmr" | "games" | "drops";
 
 const FUNNY = [
-  { src: "/videos/tv/comedy-boop-cooking.mp4", en: "Boop bakes a cake", pt: "O Boop faz um bolo" },
+  { src: "/videos/tv/comedy-boop-cooking.mp4", en: "Bloop bakes a cake", pt: "O Bloop faz um bolo" },
   { src: "/videos/tv/comedy-hide-and-seek.mp4", en: "Hide & seek (Cloudie tried)", pt: "Escondidas (a Cloudie tentou)" },
-  { src: "/videos/tv/comedy-boop-vs-bee.mp4", en: "Boop vs. the bee", pt: "Boop vs. a abelha" },
+  { src: "/videos/tv/comedy-boop-vs-bee.mp4", en: "Bloop vs. the bee", pt: "Bloop vs. a abelha" },
   { src: "/videos/tv/comedy-jelly-dance-fail.mp4", en: "Jelly's dance… attempt", pt: "A Jelly a tentar dançar" },
   { src: "/videos/tv/comedy-prank-war.mp4", en: "Prank war, round 1", pt: "Guerra de partidas, ronda 1" },
-  { src: "/videos/tv/comedy-boop-gym.mp4", en: "Leg day at Boop's gym", pt: "Dia de pernas no ginásio do Boop" },
-  { src: "/videos/w3/boop-rainy-day.mp4", en: "Boop discovers rain", pt: "O Boop descobre a chuva" },
+  { src: "/videos/tv/comedy-boop-gym.mp4", en: "Leg day at Bloop's gym", pt: "Dia de pernas no ginásio do Bloop" },
+  { src: "/videos/w3/boop-rainy-day.mp4", en: "Bloop discovers rain", pt: "O Bloop descobre a chuva" },
   { src: "/videos/w3/cloudie-alarm.mp4", en: "Cloudie vs. the alarm", pt: "Cloudie vs. o despertador" },
   { src: "/videos/w3/jelly-chef.mp4", en: "Chef Jelly", pt: "Chef Jelly" },
   { src: "/videos/w3/trio-roadtrip.mp4", en: "Tiny road trip", pt: "Mini road trip" },
-  { src: "/videos/w3/boop-mirror-scare.mp4", en: "Boop meets Boop", pt: "O Boop conhece o Boop" },
+  { src: "/videos/w3/boop-mirror-scare.mp4", en: "Bloop meets Bloop", pt: "O Bloop conhece o Bloop" },
   { src: "/videos/w3/jelly-bubble.mp4", en: "The bubble incident", pt: "O incidente da pastilha" },
-  { src: "/videos/w3/boop-snow-day.mp4", en: "Snow-Boop", pt: "Boop de neve" },
+  { src: "/videos/w3/boop-snow-day.mp4", en: "Snow-Bloop", pt: "Bloop de neve" },
   { src: "/videos/w3/plush-photo.mp4", en: "The group photo", pt: "A foto de grupo" },
-  { src: "/videos/w3/pov-boop-morning.mp4", en: "Boop's morning routine", pt: "A rotina matinal do Boop" },
+  { src: "/videos/w3/pov-boop-morning.mp4", en: "Bloop's morning routine", pt: "A rotina matinal do Bloop" },
   { src: "/videos/w3/day-of-jelly.mp4", en: "A day in Jelly's life", pt: "Um dia na vida da Jelly" },
   { src: "/videos/w3/plushie-fashion-week.mp4", en: "Plushie fashion week", pt: "Fashion week dos plushies" },
   { src: "/videos/w3/boop-unbox-mystery.mp4", en: "The mystery box", pt: "A caixa misteriosa" },
-  { src: "/videos/w3/boop-meets-jelly.mp4", en: "How Boop met Jelly", pt: "Como o Boop conheceu a Jelly" },
+  { src: "/videos/w3/boop-meets-jelly.mp4", en: "How Bloop met Jelly", pt: "Como o Bloop conheceu a Jelly" },
   { src: "/videos/w3/cloudie-origin.mp4", en: "Cloudie finds home", pt: "A Cloudie encontra casa" },
 ];
 
@@ -97,7 +116,7 @@ const GAMES: Game[] = [
   {
     id: "find-boop",
     src: "/videos/tv/games-find-boop.mp4",
-    title: { en: "Find Boop", pt: "Encontra o Boop" },
+    title: { en: "Find Bloop", pt: "Encontra o Bloop" },
     question: { en: "Spot him before the zoom ends — did you?", pt: "Encontra-o antes do zoom acabar — conseguiste?" },
     participation: true,
   },
@@ -134,7 +153,7 @@ const GAMES: Game[] = [
   {
     id: "boop-says",
     src: "/videos/w3/boop-says.mp4",
-    title: { en: "Boop says", pt: "O Boop diz" },
+    title: { en: "Bloop says", pt: "O Bloop diz" },
     question: { en: "Copy every pose. No skipping!", pt: "Copia todas as poses. Sem saltar nenhuma!" },
     participation: true,
   },
@@ -145,7 +164,7 @@ const COPY = {
     eyebrow: "leones tv",
     title1: "Very serious",
     title2: "television",
-    sub: "Comedy, ASMR and games starring the plushies. Occasionally something is for sale. Mostly it's Boop falling over.",
+    sub: "Comedy, ASMR and games starring the plushies. Occasionally something is for sale. Mostly it's Bloop falling over.",
     tabs: { funny: "😂 Funny", asmr: "🎧 ASMR", games: "🎮 Games", drops: "🛍️ Drops" },
     points: (n: number) => `${n} TV point${n === 1 ? "" : "s"}`,
     correct: "Correct! +1 TV point ✦",
@@ -158,7 +177,7 @@ const COPY = {
     eyebrow: "leones tv",
     title1: "Televisão muito",
     title2: "séria",
-    sub: "Comédia, ASMR e jogos com os plushies. Às vezes há coisas à venda. Na maior parte do tempo é o Boop a cair.",
+    sub: "Comédia, ASMR e jogos com os plushies. Às vezes há coisas à venda. Na maior parte do tempo é o Bloop a cair.",
     tabs: { funny: "😂 Risos", asmr: "🎧 ASMR", games: "🎮 Jogos", drops: "🛍️ Drops" },
     points: (n: number) => `${n} ponto${n === 1 ? "" : "s"} TV`,
     correct: "Certo! +1 ponto TV ✦",
@@ -197,10 +216,17 @@ function GameCard({ game }: { game: Game }) {
   const { lang } = useI18n();
   const c = COPY[lang];
   const [state, setState] = useState<"idle" | "right" | "wrong" | "already">("idle");
+  const [reaction, setReaction] = useState<string | null>(null);
+
+  const react = (imgs: string[]) => {
+    setReaction(imgs[Math.floor(Math.random() * imgs.length)]);
+    setTimeout(() => setReaction(null), 1500);
+  };
 
   const resolve = (won: boolean, e: React.MouseEvent) => {
     if (!won) {
       setState("wrong");
+      react(REACT_WRONG);
       setTimeout(() => setState("idle"), 1600);
       return;
     }
@@ -209,6 +235,7 @@ function GameCard({ game }: { game: Game }) {
       setState("already");
     } else {
       setState("right");
+      react(REACT_RIGHT);
       sparkleChime();
       confettiBurst(e.clientX, e.clientY, 20);
       window.dispatchEvent(new CustomEvent("leones-tv-points"));
@@ -216,7 +243,20 @@ function GameCard({ game }: { game: Game }) {
   };
 
   return (
-    <div className="w-64 shrink-0 snap-center rounded-[2rem] bg-white/70 p-4 shadow-md ring-1 ring-white/70 sm:w-72">
+    <div className="relative w-64 shrink-0 snap-center rounded-[2rem] bg-white/70 p-4 shadow-md ring-1 ring-white/70 sm:w-72">
+      <AnimatePresence>
+        {reaction && (
+          <motion.img
+            src={reaction}
+            alt=""
+            initial={{ opacity: 0, scale: 0.4, rotate: -12, y: 20 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0, y: 0 }}
+            exit={{ opacity: 0, scale: 0.6, y: -24 }}
+            transition={{ type: "spring", stiffness: 320, damping: 16 }}
+            className="pointer-events-none absolute -top-10 right-2 z-10 h-24 w-24 object-contain drop-shadow-xl"
+          />
+        )}
+      </AnimatePresence>
       <div className="rounded-[1.6rem] bg-gradient-to-br from-gold/60 via-white to-pink p-[3px]">
         <video
           src={game.src}
@@ -265,6 +305,49 @@ function GameCard({ game }: { game: Game }) {
           </motion.div>
         )}
       </AnimatePresence>
+    </div>
+  );
+}
+
+function SecretEpisodes() {
+  const { lang } = useI18n();
+  const [won, setWon] = useState(gamesWon);
+  useEffect(() => {
+    const refresh = () => setWon(gamesWon());
+    window.addEventListener("leones-tv-points", refresh);
+    window.addEventListener("storage", refresh);
+    return () => {
+      window.removeEventListener("leones-tv-points", refresh);
+      window.removeEventListener("storage", refresh);
+    };
+  }, []);
+  const t = lang === "pt"
+    ? { eyebrow: "episódios secretos", locked: (n: number) => `Ganha ${n} jogo${n === 1 ? "" : "s"} para desbloquear 🔒`, unlocked: "desbloqueado ✦" }
+    : { eyebrow: "secret episodes", locked: (n: number) => `Win ${n} game${n === 1 ? "" : "s"} to unlock 🔒`, unlocked: "unlocked ✦" };
+  return (
+    <div className="mt-6">
+      <p className="mb-3 text-center text-xs font-extrabold uppercase tracking-[0.25em] text-amber">🔓 {t.eyebrow}</p>
+      <div className="-mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4">
+        {SECRETS.map((s) => {
+          const open = won >= s.needs;
+          return open ? (
+            <TvVideo key={s.src} src={s.src} label={s[lang]} badge={t.unlocked} />
+          ) : (
+            <figure key={s.src} className="w-52 shrink-0 snap-center sm:w-60" aria-label={t.locked(s.needs)}>
+              <div className="relative overflow-hidden rounded-[1.9rem] bg-gradient-to-br from-ink/20 via-white to-ink/10 p-[3px] shadow-xl">
+                <img
+                  src={s.src.replace("/videos/", "/posters/").replace(".mp4", ".jpg")}
+                  alt=""
+                  loading="lazy"
+                  className="aspect-[9/16] w-full rounded-[1.75rem] object-cover opacity-60 blur-[6px]"
+                />
+                <span className="absolute inset-0 flex items-center justify-center text-4xl">🔒</span>
+              </div>
+              <figcaption className="mt-2 text-center text-xs font-extrabold text-ink/60">{t.locked(s.needs)}</figcaption>
+            </figure>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -334,11 +417,14 @@ export default function LeonesTvChannel() {
               {tab === "funny" && row(FUNNY)}
               {tab === "asmr" && row(ASMR, c.soundOn)}
               {tab === "games" && (
-                <div className="-mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4">
-                  {GAMES.map((g) => (
-                    <GameCard key={g.id} game={g} />
-                  ))}
-                </div>
+                <>
+                  <div className="-mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4">
+                    {GAMES.map((g) => (
+                      <GameCard key={g.id} game={g} />
+                    ))}
+                  </div>
+                  <SecretEpisodes />
+                </>
               )}
               {tab === "drops" && (
                 <div className="-mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4">
