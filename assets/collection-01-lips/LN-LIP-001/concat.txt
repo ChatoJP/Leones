@@ -1,0 +1,3 @@
+file 'mascot1.mp4'
+file 'mascot2.mp4'
+file 'mascot3.mp4'

@@ -1,0 +1,60 @@
+{
+  "ads/cta-coming-soon-clouds": {
+    "taskId": "86f1a630f6c1f5175512033fcc3d666e"
+  },
+  "ads/cta-coming-soon-silk": {
+    "taskId": "5bb56c53c4de9ba879882d7803efadc6"
+  },
+  "video:loops/loop-turn-pink-macro": {
+    "taskId": "5aca1425e52d481b67af4f3cd5968fa0",
+    "url": "https://tempfile.aiquickdraw.com/vw/5aca1425e52d481b67af4f3cd5968fa0.mp4"
+  },
+  "video:loops/loop-glitter-storm": {
+    "taskId": "bec339b30c4bd7ee888643dce151f056",
+    "url": "https://tempfile.aiquickdraw.com/vw/bec339b30c4bd7ee888643dce151f056.mp4"
+  },
+  "video:loops/loop-jelly-wobble": {
+    "taskId": "b494ba8ab327268179f173d30e7e0310",
+    "url": "https://tempfile.aiquickdraw.com/vw/b494ba8ab327268179f173d30e7e0310.mp4"
+  },
+  "video:loops/loop-cloud-drift": {
+    "taskId": "8c7e91b23fb6424e930b5c7cb49f8ded",
+    "url": "https://tempfile.aiquickdraw.com/vw/8c7e91b23fb6424e930b5c7cb49f8ded.mp4"
+  },
+  "video:chase/chase-supermarket": {
+    "taskId": "64bd75f23e5b3804db73c714e3816d0e",
+    "url": "https://tempfile.aiquickdraw.com/vw/64bd75f23e5b3804db73c714e3816d0e.mp4"
+  },
+  "video:chase/chase-beach": {
+    "taskId": "468e0fb585ce8e3a84d516218d3a6673",
+    "url": "https://tempfile.aiquickdraw.com/vw/468e0fb585ce8e3a84d516218d3a6673.mp4"
+  },
+  "video:chase/chase-mirrors": {
+    "taskId": "492c6e964a4dab3c7233dff98222af4a",
+    "url": "https://tempfile.aiquickdraw.com/vw/492c6e964a4dab3c7233dff98222af4a.mp4"
+  },
+  "video:plush/plush-trio-react": {
+    "taskId": "c8d4820364fa852a5b28a472317f0053",
+    "url": "https://tempfile.aiquickdraw.com/vw/c8d4820364fa852a5b28a472317f0053.mp4"
+  },
+  "video:plush/plush-cloudie-nap": {
+    "taskId": "5cb5c24c46683f24280c5412714cb2cc",
+    "url": "https://tempfile.aiquickdraw.com/vw/5cb5c24c46683f24280c5412714cb2cc.mp4"
+  },
+  "video:plush/plush-jelly-party": {
+    "taskId": "5d712ee3c4623ff61f50c27451cc1972",
+    "url": "https://tempfile.aiquickdraw.com/vw/5d712ee3c4623ff61f50c27451cc1972.mp4"
+  },
+  "video:stings/sting-turn-pink": {
+    "taskId": "a6d2bd860f4808dfccbf3196bd012a09",
+    "url": "https://tempfile.aiquickdraw.com/vw/a6d2bd860f4808dfccbf3196bd012a09.mp4"
+  },
+  "video:stings/sting-drop": {
+    "taskId": "8a72aff83d9f9037379474321410443a",
+    "url": "https://tempfile.aiquickdraw.com/vw/8a72aff83d9f9037379474321410443a.mp4"
+  },
+  "video:stings/sting-logo": {
+    "taskId": "a1152075fa96cd8a673166edde9f55f7",
+    "url": "https://tempfile.aiquickdraw.com/vw/a1152075fa96cd8a673166edde9f55f7.mp4"
+  }
+}

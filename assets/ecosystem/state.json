@@ -1,0 +1,324 @@
+{
+  "refs": {
+    "logo": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/logo.png",
+    "ecom-001": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/ecom-001.png",
+    "ecom-009": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/ecom-009.png",
+    "ecom-003": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/ecom-003.png",
+    "ecom-008": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/ecom-008.png",
+    "ecom-010": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/ecom-010.png",
+    "cloudie": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/cloudie.png",
+    "jelly": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/jelly.png",
+    "boop": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/boop.png",
+    "package": "https://tempfile.redpandaai.co/kieai/191534/leones/ecosystem-refs/package.png"
+  },
+  "units": {
+    "logo-glow-v1": {
+      "taskId": "fc86a989318a1aa8cd9df2b454463946",
+      "url": "https://tempfile.aiquickdraw.com/p/fc86a989318a1aa8cd9df2b454463946_1_1782983043_8077.png",
+      "file": "assets/ecosystem/brand/logo-glow-v1.png"
+    },
+    "logo-glow-v2": {
+      "taskId": "6d8882889ff97c21e76661feafd7436f",
+      "url": "https://tempfile.aiquickdraw.com/p/6d8882889ff97c21e76661feafd7436f_1_1782983052_3103.png",
+      "file": "assets/ecosystem/brand/logo-glow-v2.png"
+    },
+    "icon-app-v1": {
+      "taskId": "eb363e66923431c7ddc6c53c562149a3",
+      "url": "https://tempfile.aiquickdraw.com/aistudio/eb363e66923431c7ddc6c53c562149a3_1782983013284.png",
+      "file": "assets/ecosystem/brand/icon-app-v1.png"
+    },
+    "icon-app-v2": {
+      "taskId": "167eacb03769a8b5aa451b379b694fe0",
+      "url": "https://tempfile.aiquickdraw.com/aistudio/167eacb03769a8b5aa451b379b694fe0_1782983029048.png",
+      "file": "assets/ecosystem/brand/icon-app-v2.png"
+    },
+    "icon-app-v3": {
+      "taskId": "22c31f5cde7d8808bc641299df6ca504",
+      "url": "https://tempfile.aiquickdraw.com/p/22c31f5cde7d8808bc641299df6ca504_1_1782983126_6758.png",
+      "file": "assets/ecosystem/brand/icon-app-v3.png"
+    },
+    "pink-001": {
+      "taskId": "78dd583496a49dcfa3a2d59e9ade2e5b",
+      "url": "https://tempfile.aiquickdraw.com/p/78dd583496a49dcfa3a2d59e9ade2e5b_1_1782983045_4726.png",
+      "file": "assets/ecosystem/products/on-pink/pink-001.png"
+    },
+    "logo-gold-v1": {
+      "taskId": "add5fe8f01556f90b96fca0dbeef5f5e"
+    },
+    "logo-gold-v2": {
+      "taskId": "00902f0e6d121b75abed43046f5c2e6f"
+    },
+    "favicon-glyph-v1": {
+      "taskId": "83550636670acbdbb22508c4aea082aa"
+    },
+    "favicon-glyph-v2": {
+      "taskId": "f3fd0ee5450e0715b2de7adf7a4ab726"
+    },
+    "ui-buttons-v1": {
+      "taskId": "02d455a51b24fafcc2ac1f23193191cb"
+    },
+    "ui-buttons-v2": {
+      "taskId": "fc92b2e19ba1a62accc6276f3d6a8c32"
+    },
+    "ui-frames-v1": {
+      "taskId": "80d41bd5e578bafa8c1e9d40ff5f8e31"
+    },
+    "ui-frames-v2": {
+      "taskId": "adb60c227cc27db615259214822c1f70"
+    },
+    "ui-badges-v1": {
+      "taskId": "8f0b58f1f0d507cd8e8a61fb0192e0d1"
+    },
+    "ui-badges-v2": {
+      "taskId": "7fb6ec1a8813f2bef8269019dca3fe3a"
+    },
+    "turnpink-hero-v1": {
+      "taskId": "9fc3d2327079fa9bd1b094f01b0e7f1b",
+      "url": "https://tempfile.aiquickdraw.com/vw/9fc3d2327079fa9bd1b094f01b0e7f1b.mp4",
+      "file": "assets/ecosystem/videos/turn-pink/turnpink-hero-v1.mp4"
+    },
+    "turnpink-hero-v2": {
+      "taskId": "aa35a479896fee35f962cd7e499e10fa",
+      "url": "https://tempfile.aiquickdraw.com/vw/aa35a479896fee35f962cd7e499e10fa.mp4",
+      "file": "assets/ecosystem/videos/turn-pink/turnpink-hero-v2.mp4"
+    },
+    "turnpink-hero-v3": {
+      "fails": 1
+    },
+    "loop-glitter-party": {
+      "fails": 1
+    },
+    "loop-jelly-boop": {
+      "taskId": "22c1b4bc763475f7450eabe551aa4ccd",
+      "url": "https://tempfile.aiquickdraw.com/vw/22c1b4bc763475f7450eabe551aa4ccd.mp4",
+      "file": "assets/ecosystem/videos/product-loops/loop-jelly-boop.mp4"
+    },
+    "loop-duo-highfive": {
+      "taskId": "703af755a7024430e25a6d0d2394908b",
+      "url": "https://tempfile.aiquickdraw.com/vw/703af755a7024430e25a6d0d2394908b.mp4",
+      "file": "assets/ecosystem/videos/product-loops/loop-duo-highfive.mp4"
+    },
+    "loop-roller-race": {
+      "fails": 1
+    },
+    "mascot-cloudie-chase": {
+      "taskId": "7a47d1f50f24187133095a1719a04180",
+      "url": "https://tempfile.aiquickdraw.com/vw/7a47d1f50f24187133095a1719a04180.mp4",
+      "file": "assets/ecosystem/videos/mascots/mascot-cloudie-chase.mp4"
+    },
+    "mascot-jelly-mirror": {
+      "taskId": "1a521dbd15b6b4a9162f246d7b2c7cc7",
+      "url": "https://tempfile.aiquickdraw.com/vw/1a521dbd15b6b4a9162f246d7b2c7cc7.mp4",
+      "file": "assets/ecosystem/videos/mascots/mascot-jelly-mirror.mp4"
+    },
+    "mascot-boop-unbox": {
+      "taskId": "beaa650eb165d9a8cf858075f1399485",
+      "url": "https://tempfile.aiquickdraw.com/vw/beaa650eb165d9a8cf858075f1399485.mp4",
+      "file": "assets/ecosystem/videos/mascots/mascot-boop-unbox.mp4"
+    },
+    "mascot-cloudie-nap": {
+      "fails": 1
+    },
+    "mascot-squad-dance-v1": {
+      "fails": 1
+    },
+    "mascot-squad-dance-v2": {
+      "fails": 1
+    },
+    "mascot-heist": {
+      "taskId": "c2a2bf44139e206fb9e607eb1ee0c901",
+      "url": "https://tempfile.aiquickdraw.com/vw/c2a2bf44139e206fb9e607eb1ee0c901.mp4",
+      "file": "assets/ecosystem/videos/mascots/mascot-heist.mp4"
+    },
+    "chase-runway": {
+      "taskId": "1d291110b1a384759d15091e42b3cede",
+      "url": "https://tempfile.aiquickdraw.com/vw/1d291110b1a384759d15091e42b3cede.mp4",
+      "file": "assets/ecosystem/videos/mascots/chase-runway.mp4"
+    },
+    "unbox-asmr-v1": {
+      "taskId": "0736b8b772e12da206bd94beca0ea99f",
+      "url": "https://tempfile.aiquickdraw.com/vw/0736b8b772e12da206bd94beca0ea99f.mp4",
+      "file": "assets/ecosystem/videos/unboxing/unbox-asmr-v1.mp4"
+    },
+    "unbox-asmr-v2": {
+      "fails": 1
+    },
+    "launch-stage-v1": {
+      "taskId": "e606c9651e430d0baac97c4b767142a8",
+      "url": "https://tempfile.aiquickdraw.com/vw/e606c9651e430d0baac97c4b767142a8.mp4",
+      "file": "assets/ecosystem/videos/launch/launch-stage-v1.mp4"
+    },
+    "launch-stage-v2": {
+      "taskId": "fce287a4321d7f89b8cc7ba3a062c28e",
+      "url": "https://tempfile.aiquickdraw.com/vw/fce287a4321d7f89b8cc7ba3a062c28e.mp4",
+      "file": "assets/ecosystem/videos/launch/launch-stage-v2.mp4"
+    },
+    "launch-curtain": {
+      "taskId": "51bbc0c1efe9fdf7f25db895b4b42aa9",
+      "url": "https://tempfile.aiquickdraw.com/vw/51bbc0c1efe9fdf7f25db895b4b42aa9.mp4",
+      "file": "assets/ecosystem/videos/launch/launch-curtain.mp4"
+    },
+    "soon-frosted": {
+      "taskId": "6e78129fc8cea40c490db85fcf9b96af",
+      "url": "https://tempfile.aiquickdraw.com/vw/6e78129fc8cea40c490db85fcf9b96af.mp4",
+      "file": "assets/ecosystem/videos/coming-soon/soon-frosted.mp4"
+    },
+    "soon-shake": {
+      "taskId": "c49b437957cc63c2628d994d5538506e",
+      "url": "https://tempfile.aiquickdraw.com/vw/c49b437957cc63c2628d994d5538506e.mp4",
+      "file": "assets/ecosystem/videos/coming-soon/soon-shake.mp4"
+    },
+    "camp-tinygloss-v1": {
+      "taskId": "c93c6760d3d0e15b04ce8b3c1fa36602",
+      "url": "https://tempfile.aiquickdraw.com/vw/c93c6760d3d0e15b04ce8b3c1fa36602.mp4",
+      "file": "assets/ecosystem/videos/campaigns/tiny-gloss-big-mood/camp-tinygloss-v1.mp4"
+    },
+    "camp-tinygloss-v2": {
+      "fails": 1
+    },
+    "camp-yourpink-v1": {
+      "taskId": "0b4643761eeb51a16d389bfcc8578166",
+      "url": "https://tempfile.aiquickdraw.com/v/0b4643761eeb51a16d389bfcc8578166_1782984427.mp4",
+      "file": "assets/ecosystem/videos/campaigns/your-pink-exists/camp-yourpink-v1.mp4"
+    },
+    "camp-yourpink-v2": {
+      "taskId": "c56805dec99691959adc19751f2100e9",
+      "url": "https://tempfile.aiquickdraw.com/v/c56805dec99691959adc19751f2100e9_1782984497.mp4",
+      "file": "assets/ecosystem/videos/campaigns/your-pink-exists/camp-yourpink-v2.mp4"
+    },
+    "camp-turnpink-v1": {
+      "taskId": "2bc8a68474bee7cffa34d3bd1c6d9e36",
+      "url": "https://tempfile.aiquickdraw.com/vw/2bc8a68474bee7cffa34d3bd1c6d9e36.mp4",
+      "file": "assets/ecosystem/videos/campaigns/watch-it-turn-pink/camp-turnpink-v1.mp4"
+    },
+    "camp-turnpink-v2": {
+      "fails": 1
+    },
+    "camp-cutepremium-v1": {
+      "taskId": "6279939ac176cfc13d3206c3b32a5b18",
+      "url": "https://tempfile.aiquickdraw.com/v/6279939ac176cfc13d3206c3b32a5b18_1782984466.mp4",
+      "file": "assets/ecosystem/videos/campaigns/cute-but-premium/camp-cutepremium-v1.mp4"
+    },
+    "camp-cutepremium-v2": {
+      "taskId": "250d1fb3887773a024e265062bb254f6",
+      "url": "https://tempfile.aiquickdraw.com/vw/250d1fb3887773a024e265062bb254f6.mp4",
+      "file": "assets/ecosystem/videos/campaigns/cute-but-premium/camp-cutepremium-v2.mp4"
+    },
+    "camp-plushie-v1": {
+      "taskId": "901d4dab186a983de692f26bd566669c",
+      "url": "https://tempfile.aiquickdraw.com/vw/901d4dab186a983de692f26bd566669c.mp4",
+      "file": "assets/ecosystem/videos/campaigns/plushie-approved/camp-plushie-v1.mp4"
+    },
+    "camp-plushie-v2": {
+      "taskId": "0bd504758449ad32fe0471f50c21169b",
+      "url": "https://tempfile.aiquickdraw.com/vw/0bd504758449ad32fe0471f50c21169b.mp4",
+      "file": "assets/ecosystem/videos/campaigns/plushie-approved/camp-plushie-v2.mp4"
+    },
+    "camp-giftready-v1": {
+      "fails": 1
+    },
+    "camp-giftready-v2": {
+      "taskId": "28b639dc8d3c60ee9f2f3d08424ba5ed",
+      "url": "https://tempfile.aiquickdraw.com/vw/28b639dc8d3c60ee9f2f3d08424ba5ed.mp4",
+      "file": "assets/ecosystem/videos/campaigns/gift-ready/camp-giftready-v2.mp4"
+    },
+    "camp-maincharacter-v1": {
+      "taskId": "b6f267a0aa2ddbc6d3768f75e8556265",
+      "url": "https://tempfile.aiquickdraw.com/vw/b6f267a0aa2ddbc6d3768f75e8556265.mp4",
+      "file": "assets/ecosystem/videos/campaigns/main-character-gloss/camp-maincharacter-v1.mp4"
+    },
+    "camp-maincharacter-v2": {
+      "taskId": "805aefaa198447bd736d1e178af587e4"
+    },
+    "camp-world-v1": {
+      "fails": 1
+    },
+    "camp-world-v2": {
+      "taskId": "4801327cf85f96f9210ab33956623608",
+      "url": "https://tempfile.aiquickdraw.com/vw/4801327cf85f96f9210ab33956623608.mp4",
+      "file": "assets/ecosystem/videos/campaigns/the-leones-world/camp-world-v2.mp4"
+    },
+    "camp-thedrop-v1": {
+      "taskId": "324db08e88a3f5402c9a1f502777515c",
+      "url": "https://tempfile.aiquickdraw.com/vw/324db08e88a3f5402c9a1f502777515c.mp4",
+      "file": "assets/ecosystem/videos/campaigns/the-drop/camp-thedrop-v1.mp4"
+    },
+    "camp-thedrop-v2": {
+      "taskId": "dfffbd1016d88cee23dcc3002b3903ed",
+      "url": "https://tempfile.aiquickdraw.com/vw/dfffbd1016d88cee23dcc3002b3903ed.mp4",
+      "file": "assets/ecosystem/videos/campaigns/the-drop/camp-thedrop-v2.mp4"
+    },
+    "camp-collectible-v1": {
+      "taskId": "dd317a5baa7cb38e5bcaed3a8bb8a10e",
+      "url": "https://tempfile.aiquickdraw.com/vw/dd317a5baa7cb38e5bcaed3a8bb8a10e.mp4",
+      "file": "assets/ecosystem/videos/campaigns/collectible-beauty/camp-collectible-v1.mp4"
+    },
+    "camp-collectible-v2": {
+      "fails": 1
+    },
+    "gift-reveal-v1": {
+      "taskId": "303fe1cc306cb98bbbf55165f0633c32",
+      "url": "https://tempfile.aiquickdraw.com/vw/303fe1cc306cb98bbbf55165f0633c32.mp4",
+      "file": "assets/ecosystem/videos/gift/gift-reveal-v1.mp4"
+    },
+    "gift-reveal-v2": {
+      "taskId": "ec32505cefaee6cb283c4b3f28765367"
+    },
+    "hook-vanity": {
+      "taskId": "b0bffb6c860fd0b9b0678c7adc7259bd"
+    },
+    "hook-domino": {
+      "taskId": "ed499f64c755f0774d97a6724c095afd"
+    },
+    "hook-race": {
+      "fails": 1
+    },
+    "hook-stickers": {
+      "taskId": "1304f56070f12157c5fbba054c077239"
+    },
+    "bg-hero-clouds-v1": {
+      "fails": 1,
+      "taskId": "dea78f4a79aec98514d68c9604c360b8",
+      "url": "https://tempfile.aiquickdraw.com/v/dea78f4a79aec98514d68c9604c360b8_1782986289.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-clouds-v1.mp4"
+    },
+    "bg-hero-clouds-v2": {
+      "fails": 1,
+      "taskId": "20d9d497ac972f201957746ecbe7aedd",
+      "url": "https://tempfile.aiquickdraw.com/v/20d9d497ac972f201957746ecbe7aedd_1782986348.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-clouds-v2.mp4"
+    },
+    "bg-hero-sparkle-v1": {
+      "fails": 1,
+      "taskId": "2b2fa441ab5b19b9dc24dce45c5d21e4",
+      "url": "https://tempfile.aiquickdraw.com/v/2b2fa441ab5b19b9dc24dce45c5d21e4_1782986294.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-sparkle-v1.mp4"
+    },
+    "bg-hero-sparkle-v2": {
+      "taskId": "041fce1ca8859c4da7b0b6fc188ac00b",
+      "url": "https://tempfile.aiquickdraw.com/vw/041fce1ca8859c4da7b0b6fc188ac00b.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-sparkle-v2.mp4"
+    },
+    "bg-hero-silk": {
+      "taskId": "dce472f10c374fe2534a2eb90810303a",
+      "url": "https://tempfile.aiquickdraw.com/v/dce472f10c374fe2534a2eb90810303a_1782985841.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-silk.mp4"
+    },
+    "bg-hero-mobile-clouds-v1": {
+      "fails": 1,
+      "taskId": "439a7a4f2540de1a9f27e6666f38f74f",
+      "url": "https://tempfile.aiquickdraw.com/v/439a7a4f2540de1a9f27e6666f38f74f_1782986251.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-mobile-clouds-v1.mp4"
+    },
+    "bg-hero-mobile-clouds-v2": {
+      "taskId": "216bd3440d29be6f26e5d05381f0d546",
+      "url": "https://tempfile.aiquickdraw.com/vw/216bd3440d29be6f26e5d05381f0d546.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-mobile-clouds-v2.mp4"
+    },
+    "bg-hero-mobile-sparkle": {
+      "taskId": "615f848397223ba7be7dd0500dfb0109",
+      "url": "https://tempfile.aiquickdraw.com/vw/615f848397223ba7be7dd0500dfb0109.mp4",
+      "file": "assets/ecosystem/videos/ambient/bg-hero-mobile-sparkle.mp4"
+    }
+  }
+}
