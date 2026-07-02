@@ -34,7 +34,7 @@ export default function Nav() {
     { href: "/club", label: t("nav.club") },
     { href: "/bloop-books", label: t("nav.books"), brand: true },
     { href: "/lab", label: lang === "pt" ? "O Lab ✦" : "The Lab ✦" },
-    { href: "/#tv", label: "LeoNes TV", brand: true },
+    { href: "/tv", label: "LeoNes TV", brand: true },
     { href: "/#challenge", label: "#JellyBoop", brand: true },
   ];
 

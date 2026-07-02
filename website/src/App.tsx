@@ -42,10 +42,17 @@ const BloopBookReader = lazy(() => import("./pages/BloopBookReader"));
 const GlossLab = lazy(() => import("./pages/GlossLab"));
 const ChaseGame = lazy(() => import("./pages/ChaseGame"));
 const AdminContent = lazy(() => import("./pages/admin/Content"));
+const Tv = lazy(() => import("./pages/Tv"));
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const t = setTimeout(() => document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" }), 100);
+      return () => clearTimeout(t);
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
   // first-party, cookie-less pageview beacon
   useEffect(() => {
     fetch("/api/metrics/view", {
@@ -116,6 +123,7 @@ export default function App() {
                   <Route path="/bloop-books" element={<BloopBooks />} />
                   <Route path="/bloop-books/:slug" element={<BloopBookReader />} />
                   <Route path="/lab" element={<GlossLab />} />
+                  <Route path="/tv" element={<Tv />} />
                   <Route path="/chase" element={<ChaseGame />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>

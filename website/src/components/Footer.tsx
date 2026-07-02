@@ -21,7 +21,7 @@ export default function Footer() {
             <li><Link to="/bloop-books" translate="no" className="notranslate hover:text-ink">Bloop Books</Link></li>
             <li><Link to="/chase" translate="no" className="notranslate hover:text-ink">Bloop Chase</Link></li>
             <li><Link to="/world" className="hover:text-ink">The World</Link></li>
-            <li><a href="/#tv" translate="no" className="notranslate hover:text-ink">LeoNes TV</a></li>
+            <li><a href="/tv" translate="no" className="notranslate hover:text-ink">LeoNes TV</a></li>
             <li><Link to="/track" className="hover:text-ink">Track order</Link></li>
             <li><Link to="/cart" className="hover:text-ink">{t("nav.bag")}</Link></li>
           </ul>

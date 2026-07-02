@@ -80,7 +80,7 @@ export default function World() {
         ))}
         <div className="text-center">
           <a
-            href="/#tv"
+            href="/tv"
             className="rounded-full bg-ink px-8 py-3.5 font-bold text-cloud shadow-lg transition hover:scale-105"
           >
             {w.films}
